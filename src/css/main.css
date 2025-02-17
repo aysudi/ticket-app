@@ -84,4 +84,50 @@ header .header__search-bar input {
 }
 header .header__search-bar i {
   color: gray;
+}
+
+#slider {
+  margin: 3rem auto;
+  height: 75vh;
+  width: 80%;
+}
+#slider .slider {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+#slider .slider .slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+#slider .slider .slider-wrapper .slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+}
+#slider .slider .slider-wrapper .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#slider .slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  background-color: #fedd03;
+  border: none;
+  padding: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 50%;
+}
+#slider .slider .prev {
+  left: 0;
+}
+#slider .slider .next {
+  right: 0;
 }/*# sourceMappingURL=main.css.map */
