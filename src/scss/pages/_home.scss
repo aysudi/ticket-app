@@ -1,7 +1,16 @@
 #slider {
   margin: 3rem auto;
-  height: 100%;
+  height: 48rem;
   overflow: hidden;
+  @include respond-to(xlarge) {
+    height: 40rem;
+  }
+  @include respond-to(large) {
+    height: 30rem;
+  }
+  @include respond-to(medium) {
+    height: 20rem;
+  }
   @include container;
   .slider {
     width: 100%;
@@ -14,7 +23,17 @@
       transition: transform 0.5s ease-in-out;
       .slide {
         min-width: 100%;
+        height: 48rem;
         transition: opacity 0.5s ease;
+        @include respond-to(xlarge) {
+          height: 40rem;
+        }
+        @include respond-to(large) {
+          height: 30rem;
+        }
+        @include respond-to(medium) {
+          height: 20rem;
+        }
         img {
           width: 100%;
           height: 100%;
@@ -34,54 +53,58 @@
       cursor: pointer;
       transition: background 0.3s;
       border-radius: 50%;
-      @include respond-to(xlarge) {
-        font-size: 1.7rem;
-        padding: 1.5rem 2.3rem;
-      }
       @include respond-to(medium) {
-        font-size: 1.5rem;
-        padding: 1rem 1.6rem;
+        font-size: 1.4rem;
+        padding: 1.2rem 2rem;
       }
     }
     .prev {
       left: -3rem;
       margin-left: 10px;
       @include respond-to(medium) {
-        margin-left: 20px;
+        margin-left: 16px;
       }
     }
     .next {
       right: -3rem;
       margin-right: 10px;
       @include respond-to(medium) {
-        margin-right: 20px;
+        margin-right: 16px;
       }
     }
   }
 }
 
-// #turizm {
-//   margin: 3rem auto;
-//   height: 40vh;
-//   .swiper {
-//     width: 100%;
-//     height: 100%;
-//     border-radius: 20px;
-//     .swiper-wrapper {
-//       display: flex;
-//       gap: 1rem;
-//     }
-//     .swiper-slide {
-//       width: 100%;
-//       img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//       }
-//     }
-//     .swiper-button-next,
-//     .swiper-button-prev {
-//       color: $main-color;
-//     }
-//   }
-// }
+#popular-events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  height: 44vh;
+  @include respond-to(medium) {
+    height: 12rem;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: $main-color;
+    }
+  }
+}
