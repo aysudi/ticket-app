@@ -124,8 +124,9 @@ header .header__icons .header__profile-info .header__icon-box:hover .header__dro
 
 #slider {
   margin: 3rem auto;
-  height: 75vh;
-  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  width: 85%;
 }
 #slider .slider {
   width: 100%;
@@ -155,15 +156,39 @@ header .header__icons .header__profile-info .header__icon-box:hover .header__dro
   color: black;
   background-color: #fedd03;
   border: none;
-  padding: 2rem;
+  padding: 2rem 2.5rem;
   font-size: 2rem;
   cursor: pointer;
   transition: background 0.3s;
   border-radius: 50%;
 }
+@media (max-width: 1199px) {
+  #slider .slider button {
+    font-size: 1.7rem;
+    padding: 1.5rem 2.3rem;
+  }
+}
+@media (max-width: 768px) {
+  #slider .slider button {
+    font-size: 1.5rem;
+    padding: 1rem 1.6rem;
+  }
+}
 #slider .slider .prev {
-  left: 0;
+  left: -3rem;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  #slider .slider .prev {
+    margin-left: 20px;
+  }
 }
 #slider .slider .next {
-  right: 0;
+  right: -3rem;
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  #slider .slider .next {
+    margin-right: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
