@@ -1,7 +1,8 @@
 #slider {
   margin: 3rem auto;
-  height: 75vh;
-  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  @include container;
   .slider {
     width: 100%;
     height: 100%;
@@ -28,17 +29,33 @@
       color: black;
       background-color: $main-color;
       border: none;
-      padding: 2rem;
+      padding: 2rem 2.5rem;
       font-size: 2rem;
       cursor: pointer;
       transition: background 0.3s;
       border-radius: 50%;
+      @include respond-to(xlarge) {
+        font-size: 1.7rem;
+        padding: 1.5rem 2.3rem;
+      }
+      @include respond-to(medium) {
+        font-size: 1.5rem;
+        padding: 1rem 1.6rem;
+      }
     }
     .prev {
-      left: 0;
+      left: -3rem;
+      margin-left: 10px;
+      @include respond-to(medium) {
+        margin-left: 20px;
+      }
     }
     .next {
-      right: 0;
+      right: -3rem;
+      margin-right: 10px;
+      @include respond-to(medium) {
+        margin-right: 20px;
+      }
     }
   }
 }
