@@ -6,15 +6,6 @@
 
 @mixin container() {
   width: 85%;
-  //   @include respond-to(xlarge) {
-  //     width: 80%;
-  //   }
-  //   @include respond-to(large) {
-  //     width: 70%;
-  //   }
-  //   @include respond-to(small) {
-  //     width: 92%;
-  //   }
 }
 
 @mixin flex($justify: center, $align: center, $direction: row) {

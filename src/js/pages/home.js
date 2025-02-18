@@ -19,8 +19,34 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSlide();
   });
 
-  setInterval(() => {
-    index = (index + 1) % slides.length;
-    updateSlide();
-  }, 8000);
+  new Swiper(".mySwiper", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1: {
+        slidesPerView: 2,
+      },
+      468: {
+        slidesPerView: 3,
+      },
+      800: {
+        slidesPerView: 3,
+      },
+      1199: {
+        slidesPerView: 4,
+      },
+      1400: {
+        slidesPerView: 5,
+      },
+    },
+  });
 });
