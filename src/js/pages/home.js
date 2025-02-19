@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".mySwiper", {
     slidesPerView: 5,
     spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+    // loop: true,
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
