@@ -29,13 +29,20 @@ header {
       }
     }
     .header__icon--favorites {
-      margin-top: 0.8rem;
-      i {
-        font-size: 2rem;
+      margin-top: 0.6rem;
+      cursor: pointer;
+      svg {
+        font-size: 1.6rem;
         @include respond-to(small) {
-          font-size: 1.7rem;
+          font-size: 1.2rem;
         }
       }
+      //   i {
+      //     font-size: 2rem;
+      //     @include respond-to(small) {
+      //       font-size: 1.7rem;
+      //     }
+      //   }
     }
 
     .header__profile-info {
