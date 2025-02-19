@@ -17,3 +17,24 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  src: url("../assets/fonts/AtkinsonHyperlegibleNext-Bold.woff2")
+      format("woff2"),
+    url("../assets/fonts/AtkinsonHyperlegibleNext-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  src: url("../assets/fonts/AtkinsonHyperlegibleNext-ExtraBold.woff2")
+      format("woff2"),
+    url("../assets/fonts/AtkinsonHyperlegibleNext-ExtraBold.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

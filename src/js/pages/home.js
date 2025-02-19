@@ -35,11 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
       1: {
         slidesPerView: 2,
       },
-      468: {
-        slidesPerView: 3,
+      400: {
+        slidesPerView: 2,
+        spaceBetween: 35,
       },
-      800: {
+      780: {
         slidesPerView: 3,
+        spaceBetween: 20,
       },
       1199: {
         slidesPerView: 4,
