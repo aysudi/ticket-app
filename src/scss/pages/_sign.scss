@@ -1,10 +1,13 @@
 body {
   @include respond-to(medium) {
-    background-color: #fbf5cc;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/004/277/473/small/abstract-wavy-yellow-blue-lilac-background-free-photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
-#sign {
+.sign {
   display: flex;
   width: 57rem;
   margin: 8rem auto;
@@ -39,7 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    padding: 4rem 2.4rem;
+    padding: 3.5rem 2.4rem;
     @include respond-to(medium) {
       padding: 4rem 1.4rem;
     }
@@ -47,7 +50,7 @@ body {
       display: flex;
       flex-direction: column;
       gap: 1.1rem;
-      width: 85%;
+      width: 88%;
       input {
         padding: 0.7rem 1rem;
         border-radius: 25px;
@@ -82,10 +85,44 @@ body {
         font-size: 1.2rem;
         color: white;
         cursor: pointer;
+        @include respond-to(medium) {
+          width: 47%;
+        }
         &:hover {
           background-color: white;
           color: black;
           border: 1px solid #4597ad;
+        }
+      }
+    }
+  }
+}
+
+.sign-up {
+  @include respond-to(medium) {
+    justify-content: center;
+    align-items: center;
+  }
+  .sign-up__img {
+    width: 25rem;
+    @include respond-to(large) {
+      width: 30rem;
+    }
+  }
+  .sign__form-box {
+    @include respond-to(medium) {
+      padding: 3rem 0.7rem;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .sign-up__form {
+      gap: 0.8rem;
+      button {
+        margin: 1rem auto 0;
+        background-color: #c99abd;
+        &:hover {
+          border: 1px solid #c99abd;
         }
       }
     }
