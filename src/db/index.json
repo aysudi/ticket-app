@@ -136,7 +136,7 @@
     {
       "id": "8",
       "name": "Kalben Live in Baku",
-      "dateTime": "2025-05-14T20:00:00Z",
+      "dateTime": "May 14, 2025",
       "venueName": "Heydar Aliyev Palace",
       "venueAddress": "Bulbul Avenue 35, Baku, Azerbaijan",
       "venueCapacity": 2158,
@@ -212,7 +212,7 @@
     {
       "id": "12",
       "name": "The Weeknd Night",
-      "dateTime": "2025-03-12T20:00:00",
+      "dateTime": "March 12, 2025",
       "venueName": "Hayal Kahvesi Baku",
       "venueAddress": "Park Bulvar Shopping Mall, Neftchiler pr.1, Baku, Azerbaijan",
       "venueCapacity": 500,
@@ -269,19 +269,19 @@
     {
       "id": "15",
       "name": "Kenan Doğulu Live in Baku",
-      "dateTime": "2025-06-21T20:30:00Z",
+      "dateTime": "June 21, 2025",
       "venueName": "Baku Sports Hall",
       "venueAddress": "26a Neftchilar Ave, Baku, Azerbaijan",
       "venueCapacity": 2500,
       "organizer": "Live Nation",
-      "description": "Experience an unforgettable night of music and magic as Turkish pop icon Kenan Doğulu takes the stage at Baku Sports Hall! Renowned for his infectious energy and chart-topping hits, Kenan will deliver an electrifying performance featuring fan-favorite songs from his legendary albums, including Kim Bu Ben, Ben Senin Her Şeyinim, Rüya, and Seyyah. This special night will also include fresh remixes of his biggest tracks, creating an extraordinary musical experience that blends nostalgia with modern beats. Get ready for a dynamic show filled with mesmerizing stage effects, live instrumentation, and Kenan’s signature charisma that has captivated audiences worldwide. Whether you're a longtime fan or discovering his music for the first time, this concert promises to be a night to remember. With a high-energy crowd, an unbeatable atmosphere, and one of Turkey’s most beloved artists performing live, this is a must-attend event for music lovers of all ages. Secure your tickets now and be part of a spectacular evening where music and emotions come together in perfect harmony!",
+      "description": "Experience an unforgettable night of music and magic as Turkish pop icon Kenan Doğulu takes the stage at Baku Sports Hall! Renowned for his infectious energy and chart-topping hits, Kenan will deliver an electrifying performance featuring fan-favorite songs from his legendary albums, including Kim Bu Ben, Ben Senin Her Şeyinim, Rüya, and Seyyah. Get ready for a dynamic show filled with mesmerizing stage effects, live instrumentation, and Kenan’s signature charisma that has captivated audiences worldwide. With a high-energy crowd, an unbeatable atmosphere, and one of Turkey’s most beloved artists performing live, this is a must-attend event for music lovers of all ages. Secure your tickets now and be part of a spectacular evening where music and emotions come together in perfect harmony!",
       "ticketsAvailable": 500,
       "category": "Concert",
       "price": 59,
       "ageRestriction": "6+",
       "posterURL": "https://cdn.iticket.az/event/poster_square/GBou9V7M2NcZrpJesySUuD0qEmxNYHxwmaB50Gzy.jpg",
       "duration": "1.5 hours",
-      "detailPoster": "https://cdn.iticket.az/event/cover/VgljhdBEI107MUE5GGVrlaC1TzgT1o5LW6lIXpTo.jpg",
+      "detailPoster": "https://cdn.iticket.az/event/cover/dKy5ZUuGhGO6oMoOVPiXEEXQNIhUI49N36bytV1b.jpg",
       "soldTickets": 2000,
       "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.2567260494093!2d49.83241007660758!3d40.358831559160194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307c33b969dd01%3A0x9950842ed59b39b2!2sBaku%20Sports%20Hall!5e0!3m2!1sen!2saz!4v1740155041441!5m2!1sen!2saz"
     }
