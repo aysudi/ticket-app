@@ -3,7 +3,7 @@ footer {
   justify-content: space-between;
   align-items: start;
   @include container;
-  margin: 10rem auto 3rem;
+  margin: 8rem auto 3rem;
   @include respond-to(medium) {
     margin: 4rem auto;
   }
