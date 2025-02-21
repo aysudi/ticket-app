@@ -3,7 +3,7 @@ export function renderCards(arr) {
   eventsCards.innerHTML = "";
   arr.forEach((event) => {
     eventsCards.innerHTML += `
-        <div class="card">
+        <div data-id=${event.id} class="card">
             <div class="event__img">
               <img
                 src="${event.posterURL}"

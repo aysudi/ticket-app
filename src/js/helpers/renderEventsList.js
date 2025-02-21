@@ -3,7 +3,7 @@ export function renderEventsList(arr) {
   events.innerHTML = "";
   arr.forEach((event) => {
     events.innerHTML += `
-    <div class="swiper-slide">
+    <div data-id=${event.id} class="swiper-slide">
               <div class="img-box">
                 <img
                   src="${event.posterURL}"
@@ -22,7 +22,4 @@ export function renderEventsList(arr) {
             </div>
     `;
   });
-
-  const eventSlide = document.querySelector(".swiper-slide");
-  //   eventSlide.addEventListener('click', () => {})
 }

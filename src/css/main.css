@@ -815,9 +815,12 @@ footer .footer__list ul li a:hover {
 }
 #details .details__description {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 3rem;
 }
 #details .details__description iframe {
+  border-radius: 20px;
   width: 1000px;
 }
 #details .details__description p {
