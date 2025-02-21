@@ -1,4 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
+import { renderEventsList } from "../helpers/renderEventsList.js";
+import { endpoints } from "../services/api.js";
+import controller from "../services/request.js";
+
+document.addEventListener("DOMContentLoaded", async function () {
   const slider = document.querySelector(".slider-wrapper");
   const slides = document.querySelectorAll(".slide");
   const prevBtn = document.querySelector(".prev");
@@ -52,4 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  const apiResponse = await controller.getAll(endpoints.events);
+  renderEventsList(apiResponse.data);
 });

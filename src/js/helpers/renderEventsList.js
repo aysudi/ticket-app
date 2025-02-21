@@ -1,0 +1,28 @@
+export function renderEventsList(arr) {
+  const events = document.querySelector(".events");
+  events.innerHTML = "";
+  arr.forEach((event) => {
+    events.innerHTML += `
+    <div class="swiper-slide">
+              <div class="img-box">
+                <img
+                  src="${event.posterURL}"
+                  alt=""
+                />
+                <span>from 8$</span>
+              </div>
+              <div class="text-box">
+                <h4>${event.name}</h4>
+                <div class="event-info">
+                  <span>${event.ageRestriction}</span>
+                  <span class="dot">•</span>
+                  <span>${event.venueName}</span>
+                </div>
+              </div>
+            </div>
+    `;
+  });
+
+  const eventSlide = document.querySelector(".swiper-slide");
+  //   eventSlide.addEventListener('click', () => {})
+}

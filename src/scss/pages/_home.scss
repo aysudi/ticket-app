@@ -116,8 +116,8 @@
         position: absolute;
         bottom: 1px;
         left: 10px;
-        transform: translateY(-12px);
-        opacity: 0;
+        transform: translateY(-15px);
+        visibility: hidden;
         h4 {
           font-weight: 700;
           font-size: 18px;
@@ -144,7 +144,7 @@
       &:hover {
         .text-box {
           transform: translateY(0px);
-          opacity: 1;
+          visibility: visible;
           transition: 0.2s linear;
         }
         .img-box span {
@@ -155,6 +155,7 @@
         width: 100%;
         height: 100%;
         position: relative;
+        z-index: 10;
         img {
           width: 100%;
           height: 100%;
@@ -175,7 +176,7 @@
           background-color: $main-color;
           font-size: 1.2rem;
           border-radius: 1.5rem;
-          transition: 0.2s linear;
+          transition: 0.2s;
           @include respond-to(medium) {
             font-size: 1.1rem;
             padding: 0.4rem 1.4rem;
@@ -203,6 +204,17 @@
         background-color: transparent;
         padding: 0;
       }
+    }
+  }
+}
+
+#advertising {
+  .advertising__img {
+    @include container;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
