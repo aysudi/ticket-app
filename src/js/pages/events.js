@@ -7,13 +7,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderCards(apiResponse.data);
 
   const eventsCards = document.querySelectorAll(".card");
-  console.log(eventsCards);
   eventsCards.forEach((event) => {
-    const eventID = event.getAttribute("data-id");
     event.addEventListener("click", () => {
       const url = new URL(window.location.href);
       const eventID = event.getAttribute("data-id");
-      console.log(eventID);
       url.searchParams.set("id", eventID);
       window.location.href = `./details.html?id=${eventID}`;
     });

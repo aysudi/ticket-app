@@ -285,5 +285,187 @@
       "soldTickets": 2000,
       "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.2567260494093!2d49.83241007660758!3d40.358831559160194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307c33b969dd01%3A0x9950842ed59b39b2!2sBaku%20Sports%20Hall!5e0!3m2!1sen!2saz!4v1740155041441!5m2!1sen!2saz"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "role": "admin",
+      "username": "admin_tech",
+      "email": "admin_tech@example.com",
+      "password": "hashed_password_1",
+      "balance": 500,
+      "profilePictureURL": "https://example.com/images/admin-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2022-01-01",
+      "totalSpentMoney": 0
+    },
+    {
+      "id": 2,
+      "role": "client",
+      "username": "johnny_events",
+      "email": "johnny@example.com",
+      "password": "hashed_password_2",
+      "balance": 150,
+      "profilePictureURL": "https://example.com/images/johnny-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-05-15",
+      "totalSpentMoney": 80
+    },
+    {
+      "id": 3,
+      "role": "client",
+      "username": "mike_attendee",
+      "email": "mike@example.com",
+      "password": "hashed_password_3",
+      "balance": 75,
+      "profilePictureURL": "https://example.com/images/mike-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-07-12",
+      "totalSpentMoney": 50
+    },
+    {
+      "id": 4,
+      "role": "client",
+      "username": "jenny_tech",
+      "email": "jenny@example.com",
+      "password": "hashed_password_4",
+      "balance": 120,
+      "profilePictureURL": "https://example.com/images/jenny-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2022-03-01",
+      "totalSpentMoney": 110
+    },
+    {
+      "id": 5,
+      "role": "client",
+      "username": "susan_smith",
+      "email": "susan@example.com",
+      "password": "hashed_password_5",
+      "balance": 200,
+      "profilePictureURL": "https://example.com/images/susan-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2021-09-20",
+      "totalSpentMoney": 250
+    },
+    {
+      "id": 6,
+      "role": "client",
+      "username": "alex_brown",
+      "email": "alex@example.com",
+      "password": "hashed_password_6",
+      "balance": 100,
+      "profilePictureURL": "https://example.com/images/alex-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-01-22",
+      "totalSpentMoney": 60
+    },
+    {
+      "id": 7,
+      "role": "client",
+      "username": "emily_jo",
+      "email": "emily@example.com",
+      "password": "hashed_password_7",
+      "balance": 80,
+      "profilePictureURL": "https://example.com/images/emily-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-06-10",
+      "totalSpentMoney": 30
+    },
+    {
+      "id": 8,
+      "role": "client",
+      "username": "jack_miller",
+      "email": "jack@example.com",
+      "password": "hashed_password_8",
+      "balance": 50,
+      "profilePictureURL": "https://example.com/images/jack-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-03-25",
+      "totalSpentMoney": 20
+    },
+    {
+      "id": 9,
+      "role": "client",
+      "username": "olivia_white",
+      "email": "olivia@example.com",
+      "password": "hashed_password_9",
+      "balance": 300,
+      "profilePictureURL": "https://example.com/images/olivia-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2022-07-14",
+      "totalSpentMoney": 150
+    },
+    {
+      "id": 10,
+      "role": "client",
+      "username": "lucas_king",
+      "email": "lucas@example.com",
+      "password": "hashed_password_10",
+      "balance": 220,
+      "profilePictureURL": "https://example.com/images/lucas-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2022-11-05",
+      "totalSpentMoney": 90
+    },
+    {
+      "id": 11,
+      "role": "client",
+      "username": "sophia_lee",
+      "email": "sophia@example.com",
+      "password": "hashed_password_11",
+      "balance": 180,
+      "profilePictureURL": "https://example.com/images/sophia-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-02-28",
+      "totalSpentMoney": 70
+    },
+    {
+      "id": 12,
+      "role": "client",
+      "username": "benjamin_gray",
+      "email": "benjamin@example.com",
+      "password": "hashed_password_12",
+      "balance": 60,
+      "profilePictureURL": "https://example.com/images/benjamin-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-08-10",
+      "totalSpentMoney": 10
+    },
+    {
+      "id": 13,
+      "role": "client",
+      "username": "mia_peters",
+      "email": "mia@example.com",
+      "password": "hashed_password_13",
+      "balance": 90,
+      "profilePictureURL": "https://example.com/images/mia-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-04-22",
+      "totalSpentMoney": 40
+    },
+    {
+      "id": 14,
+      "role": "client",
+      "username": "nathan_fox",
+      "email": "nathan@example.com",
+      "password": "hashed_password_14",
+      "balance": 110,
+      "profilePictureURL": "https://example.com/images/nathan-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-09-12",
+      "totalSpentMoney": 60
+    },
+    {
+      "id": 15,
+      "role": "client",
+      "username": "ella_baker",
+      "email": "ella@example.com",
+      "password": "hashed_password_15",
+      "balance": 130,
+      "profilePictureURL": "https://example.com/images/ella-profile.jpg",
+      "favorites": [],
+      "accountCreationDate": "2023-02-19",
+      "totalSpentMoney": 50
+    }
   ]
 }

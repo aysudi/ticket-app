@@ -59,4 +59,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   const apiResponse = await controller.getAll(endpoints.events);
   renderEventsList(apiResponse.data);
+
+  const eventsSlides = document.querySelectorAll(".swiper-slide");
+  eventsSlides.forEach((event) => {
+    event.addEventListener("click", () => {
+      const url = new URL(window.location.href);
+      const eventID = event.getAttribute("data-id");
+      url.searchParams.set("id", eventID);
+      window.location.href = `./details.html?id=${eventID}`;
+    });
+  });
 });
