@@ -286,8 +286,8 @@ header .header__icons .header__profile-info .header__icon-box:hover .header__dro
   position: absolute;
   bottom: 1px;
   left: 10px;
-  transform: translateY(-12px);
-  opacity: 0;
+  transform: translateY(-15px);
+  visibility: hidden;
 }
 #popular-events .swiper .swiper-slide .text-box h4 {
   font-weight: 700;
@@ -313,7 +313,7 @@ header .header__icons .header__profile-info .header__icon-box:hover .header__dro
 }
 #popular-events .swiper .swiper-slide:hover .text-box {
   transform: translateY(0px);
-  opacity: 1;
+  visibility: visible;
   transition: 0.2s linear;
 }
 #popular-events .swiper .swiper-slide:hover .img-box span {
@@ -323,6 +323,7 @@ header .header__icons .header__profile-info .header__icon-box:hover .header__dro
   width: 100%;
   height: 100%;
   position: relative;
+  z-index: 10;
 }
 #popular-events .swiper .swiper-slide .img-box img {
   width: 100%;
@@ -345,7 +346,7 @@ header .header__icons .header__profile-info .header__icon-box:hover .header__dro
   background-color: #fedd03;
   font-size: 1.2rem;
   border-radius: 1.5rem;
-  transition: 0.2s linear;
+  transition: 0.2s;
 }
 @media (max-width: 768px) {
   #popular-events .swiper .swiper-slide .img-box span {
@@ -379,12 +380,21 @@ header .header__icons .header__profile-info .header__icon-box:hover .header__dro
   }
 }
 
+#advertising .advertising__img {
+  width: 85%;
+  margin: 0 auto;
+}
+#advertising .advertising__img img {
+  width: 100%;
+  height: 100%;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
   align-items: start;
   width: 85%;
-  margin: 8rem auto 3rem;
+  margin: 10rem auto 3rem;
 }
 @media (max-width: 1199px) {
   footer {
