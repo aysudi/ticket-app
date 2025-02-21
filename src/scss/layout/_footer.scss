@@ -4,6 +4,9 @@ footer {
   align-items: start;
   @include container;
   margin: 10rem auto 3rem;
+  @include respond-to(medium) {
+    margin: 4rem auto;
+  }
   @include respond-to(xlarge) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
