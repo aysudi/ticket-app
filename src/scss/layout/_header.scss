@@ -28,11 +28,11 @@ header {
         background-color: $main-color;
         border-radius: 50%;
         border: none;
-        padding: 1rem 1.2rem;
+        padding: 0.9rem 1rem;
         color: black;
         cursor: pointer;
         @include respond-to(medium) {
-          padding: 0.8rem;
+          padding: 0.7rem;
         }
       }
     }
@@ -54,6 +54,12 @@ header {
       .fa-heart {
         border: 3px solid $main-color;
         background-color: white;
+      }
+      .fa-cart-shopping {
+        padding: 1rem;
+        @include respond-to(medium) {
+          padding: 0.83rem;
+        }
       }
     }
     .header__profile {
