@@ -1,4 +1,5 @@
 import { renderFavorites } from "../helpers/renderFavorites.js";
+import { searchItems, sortItems } from "../helpers/sortSearch.js";
 import { endpoints } from "../services/api";
 import controller from "../services/request.js";
 
@@ -9,4 +10,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     favoriteItems.some((el) => el.id == x.id)
   );
   renderFavorites(favoritesList);
+  searchItems(favoritesList);
+
+  const sort = document.querySelector("#sort");
+  sort.addEventListener("change", (e) => {
+    const sortedList = sortItems(e.target.value, favoritesList);
+    renderFavorites(sortedList);
+  });
+  console.log(sort.value);
 });
