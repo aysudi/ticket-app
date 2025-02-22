@@ -40,9 +40,13 @@
     gap: 3rem;
     .card {
       position: relative;
+      overflow: hidden;
       &:hover {
         .favorites__img {
           img {
+            transform: translateY(-3.3rem);
+          }
+          span {
             transform: translateY(-3.3rem);
           }
         }
@@ -60,8 +64,20 @@
           height: 100%;
           object-fit: cover;
           border-radius: 20px;
-          transition: 0.3s linear;
+          transition: 0.2s linear;
+          z-index: 5;
+        }
+        span {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          padding: 0.7rem 2.3rem;
+          font-size: 1.2rem;
+          font-weight: 700;
+          border-radius: 25px;
+          background-color: $main-color;
           z-index: 10;
+          transition: 0.2s linear;
         }
       }
       .favorites__info {
@@ -69,6 +85,9 @@
         display: none;
         bottom: 5px;
         left: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         z-index: -1;
         h4 {
           font-size: 20px;

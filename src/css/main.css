@@ -1062,8 +1062,12 @@ footer .footer__list ul li a:hover {
 }
 #favorites .favorites__cards .card {
   position: relative;
+  overflow: hidden;
 }
 #favorites .favorites__cards .card:hover .favorites__img img {
+  transform: translateY(-3.3rem);
+}
+#favorites .favorites__cards .card:hover .favorites__img span {
   transform: translateY(-3.3rem);
 }
 #favorites .favorites__cards .card:hover .favorites__info {
@@ -1081,14 +1085,29 @@ footer .footer__list ul li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px;
-  transition: 0.3s linear;
+  transition: 0.2s linear;
+  z-index: 5;
+}
+#favorites .favorites__cards .card .favorites__img span {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.7rem 2.3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 25px;
+  background-color: #fedd03;
   z-index: 10;
+  transition: 0.2s linear;
 }
 #favorites .favorites__cards .card .favorites__info {
   position: absolute;
   display: none;
   bottom: 5px;
   left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   z-index: -1;
 }
 #favorites .favorites__cards .card .favorites__info h4 {

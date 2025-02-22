@@ -9,7 +9,7 @@ export function renderDetails(obj) {
           />
           <div class="details__icons">
             <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-regular fa-heart"></i>
+            <i data-id=${obj.id} class="fa-solid fa-heart favBtn"></i>
           </div>
         </div>
         <div class="details__info">
