@@ -1,130 +1,170 @@
-#sign {
-  @include respond-to(medium) {
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/004/277/473/small/abstract-wavy-yellow-blue-lilac-background-free-photo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+#signUp {
+  height: 100vh;
+  background-image: url("../assets/images/signUp-bgc.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#signIn {
+  height: 100vh;
+  background-image: url("../assets/images/signIn-bgc.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sign {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   width: 57rem;
   margin: 8rem auto;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   @include respond-to(large) {
     width: 45rem;
   }
   @include respond-to(medium) {
-    background-color: white;
     width: 83%;
   }
   @include respond-to(small) {
     width: 90%;
   }
-  .sign__image-box {
-    width: 50rem;
-    @include respond-to(large) {
-      width: 100%;
-    }
-    @include respond-to(medium) {
-      display: none;
-    }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  .sign__form-box {
+  .sign__box {
     display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    padding: 3.5rem 2.4rem;
-    @include respond-to(medium) {
-      padding: 4rem 1.4rem;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    .sign__image-box {
+      width: 50rem;
+      @include respond-to(large) {
+        width: 100%;
+      }
+      @include respond-to(medium) {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
-    .sign__form {
+    .sign__form-box {
       display: flex;
       flex-direction: column;
-      gap: 1.1rem;
-      width: 88%;
-      input {
-        padding: 0.7rem 1rem;
-        border-radius: 25px;
-        font-size: 1.1rem;
-        outline: none;
+      gap: 1.2rem;
+      padding: 3.5rem 2.4rem;
+      @include respond-to(medium) {
+        padding: 4rem 1.4rem;
       }
-      .password__input {
+      .sign__form {
         display: flex;
-        justify-content: space-between;
-        border: 2px solid black;
-        padding: 0.1rem 0.6rem;
-        border-radius: 25px;
-        background-color: white;
+        flex-direction: column;
+        gap: 1.1rem;
+        width: 88%;
         input {
-          border: none;
-          width: 100%;
-          padding: 0.7rem 0.3rem;
+          padding: 0.7rem 1rem;
+          border-radius: 25px;
+          font-size: 1.1rem;
+          outline: none;
         }
-        i {
-          margin-top: 0.7rem;
-          font-size: 1.2rem;
-          padding-right: 0.5rem;
-          cursor: pointer;
-        }
-      }
-      button {
-        padding: 0.7rem;
-        background-color: #4597ad;
-        border-radius: 30px;
-        border: none;
-        width: 40%;
-        font-size: 1.2rem;
-        color: white;
-        cursor: pointer;
-        @include respond-to(medium) {
-          width: 47%;
-        }
-        &:hover {
+        .password__input {
+          display: flex;
+          justify-content: space-between;
+          border: 2px solid black;
+          padding: 0.1rem 0.6rem;
+          border-radius: 25px;
           background-color: white;
-          color: black;
-          border: 1px solid #4597ad;
+          input {
+            border: none;
+            width: 100%;
+            padding: 0.7rem 0.3rem;
+          }
+          i {
+            margin-top: 0.7rem;
+            font-size: 1.2rem;
+            padding-right: 0.5rem;
+            cursor: pointer;
+          }
+        }
+        button {
+          padding: 0.7rem;
+          background-color: #4597ad;
+          border-radius: 30px;
+          border: none;
+          width: 40%;
+          font-size: 1.2rem;
+          color: white;
+          cursor: pointer;
+          @include respond-to(medium) {
+            width: 47%;
+          }
+          &:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid #4597ad;
+          }
         }
       }
+    }
+  }
+  .back {
+    border: none;
+    background-color: #4597ad;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+    width: 12rem;
+    padding: 1em;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    @include respond-to(medium) {
+      width: 10rem;
+      padding: 0.8rem;
     }
   }
 }
 
 .sign-up {
   @include respond-to(medium) {
-    justify-content: center;
-    align-items: center;
+    width: 450px;
   }
-  .sign-up__img {
-    width: 25rem;
-    @include respond-to(large) {
-      width: 30rem;
-    }
+  @include respond-to(small) {
+    width: 90%;
   }
-  .sign__form-box {
-    @include respond-to(medium) {
-      padding: 3rem 0.7rem;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
+  .sign__box {
+    .sign-up__img {
+      width: 25rem;
+      @include respond-to(large) {
+        width: 30rem;
+      }
     }
-    .sign-up__form {
-      gap: 0.8rem;
-      button {
-        margin: 1rem auto 0;
-        background-color: #c99abd;
-        &:hover {
-          border: 1px solid #c99abd;
+    .sign__form-box {
+      @include respond-to(medium) {
+        margin: 0 auto;
+        padding: 2rem 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      .sign-up__form {
+        gap: 0.8rem;
+        button {
+          margin: 1rem 0;
+          background-color: black;
+          color: white;
+          @include respond-to(medium) {
+            margin: 1rem auto;
+          }
+          &:hover {
+            color: black;
+            border: 1px solid black;
+          }
         }
       }
     }
+  }
+  .sign__up-back {
+    background-color: black;
   }
 }

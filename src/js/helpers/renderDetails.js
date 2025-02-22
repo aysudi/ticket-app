@@ -3,7 +3,14 @@ export function renderDetails(obj) {
   detailsBox.innerHTML = "";
   detailsBox.innerHTML += `
   <div data-id="${obj.id}" class="details__img">
-          <img src="${obj.detailPoster}" alt="" />
+          <img
+            src="${obj.detailPoster}"
+            alt=""
+          />
+          <div class="details__icons">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+          </div>
         </div>
         <div class="details__info">
           <div class="date">
