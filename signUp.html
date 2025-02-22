@@ -18,70 +18,39 @@
     <link rel="stylesheet" href="./src/css/main.css" />
     <title>Ticket App</title>
   </head>
-  <body id="sign">
-    <header class="header">
-      <div class="header__logo">
-        <img
-          src="https://www.mall28.az/storage/uploads/k6YjZ8BzjZAYo7oEofbLD51iSuvB5EwLCrowncEF.png"
-          alt="Logo"
-        />
-      </div>
-      <div class="header__icons">
-        <div class="header__icon header__icon--favorites">
-          <svg
-            viewBox="0 0 24 24"
-            width="1.5em"
-            height="1.5em"
-            aria-hidden="true"
-            focusable="false"
-            class="BaseSvg-sc-yh8lnd-0 HeartIcon___StyledBaseSvg-sc-1shonaa-0 ckLyyv"
-          >
-            <path
-              d="M6.18 1.56 12 5.91l5.82-4.35L23 5.48v7.42l-11 9.6-11-9.6V5.48zm11.64 1.88L12 7.79 6.18 3.44 2.5 6.22v6L12 20.5l9.5-8.28v-6z"
-            ></path>
-          </svg>
-        </div>
-        <div class="header__profile-info">
-          <div class="header__icon-box">
-            <div class="header__icon header__icon--profile">
-              <i class="fa-regular fa-user"></i>
-            </div>
-            <ul class="header__dropdown">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./signIn.html">Sign In</a></li>
-              <li><a href="./signUp.html">Sign Up</a></li>
-              <li><a href="./events.html">Events</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
+  <body id="signUp">
     <main>
       <section class="sign sign-up">
-        <div class="sign__image-box sign-up__img">
-          <img src="./src/assets/images/signUp-img.jpeg" alt="Sign Up Image" />
+        <div class="sign__box">
+          <div class="sign__image-box sign-up__img">
+            <img
+              src="./src/assets/images/signUp-img.jpeg"
+              alt="Sign Up Image"
+            />
+          </div>
+          <div class="sign__form-box">
+            <h2>Sign Up</h2>
+            <p>
+              Create a Iticket account. Already have an account?
+              <a href="./signIn.html">Login</a>
+            </p>
+            <form class="sign__form sign-up__form">
+              <input type="text" placeholder="Full Name" />
+              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Email" />
+              <div class="password__input">
+                <input type="password" placeholder="Password" />
+                <i class="fa-regular fa-eye-slash"></i>
+              </div>
+              <div class="password__input">
+                <input type="password" placeholder="Confirm Password" />
+                <i class="fa-regular fa-eye-slash"></i>
+              </div>
+              <button type="submit">Sign Up</button>
+            </form>
+          </div>
         </div>
-        <div class="sign__form-box">
-          <h2>Sign Up</h2>
-          <p>
-            Create a Iticket account. Already have an account?
-            <a href="./signIn.html">Login</a>
-          </p>
-          <form class="sign__form sign-up__form">
-            <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Username" />
-            <input type="text" placeholder="Email" />
-            <div class="password__input">
-              <input type="password" placeholder="Password" />
-              <i class="fa-regular fa-eye-slash"></i>
-            </div>
-            <div class="password__input">
-              <input type="password" placeholder="Confirm Password" />
-              <i class="fa-regular fa-eye-slash"></i>
-            </div>
-            <button type="submit">Sign Up</button>
-          </form>
-        </div>
+        <a href="index.html" class="back sign__up-back">Home</a>
       </section>
     </main>
   </body>

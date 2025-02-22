@@ -9,6 +9,7 @@
   }
   .details__img {
     overflow: hidden;
+    position: relative;
     @include respond-to(medium) {
       height: 20rem;
     }
@@ -20,6 +21,21 @@
       height: 100%;
       object-fit: cover;
       border-radius: 20px;
+    }
+    .details__icons {
+      position: absolute;
+      bottom: 2rem;
+      right: 3rem;
+      display: flex;
+      gap: 1rem;
+      i {
+        font-size: 1.4rem;
+        padding: 1.1rem;
+        border: 3px solid white;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
   .details__info {

@@ -9,7 +9,7 @@ export function renderEventsList(arr) {
                   src="${event.posterURL}"
                   alt=""
                 />
-                <span>from 8$</span>
+                <span>${event.price}$</span>
               </div>
               <div class="text-box">
                 <h4>${event.name}</h4>
