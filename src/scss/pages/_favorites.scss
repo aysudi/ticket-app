@@ -19,9 +19,9 @@
     }
     .favorites__search {
       position: relative;
-      padding: 0.9rem;
+      padding: 1rem;
       border: 1px solid black;
-      border-radius: 25px;
+      border-radius: 30px;
       width: 32rem;
       @include respond-to(small) {
         width: 100%;
@@ -36,7 +36,7 @@
       i {
         position: absolute;
         font-size: 1.1rem;
-        bottom: 17px;
+        bottom: 18px;
         right: 15px;
         @include respond-to(small) {
           bottom: 12px;
@@ -44,8 +44,8 @@
       }
     }
     select {
-      padding: 0.9rem;
-      border-radius: 25px;
+      padding: 1rem;
+      border-radius: 30px;
       width: 30rem;
       font-size: 1.1rem;
       @include respond-to(small) {
@@ -70,6 +70,7 @@
     .card {
       position: relative;
       overflow: hidden;
+      cursor: pointer;
       &:hover {
         .favorites__img {
           img {
