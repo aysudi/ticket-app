@@ -4,17 +4,29 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  @include respond-to(small) {
+    gap: 2rem;
+    margin: 2rem auto;
+  }
   .favorites__sort {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    @include respond-to(small) {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
     .favorites__search {
       position: relative;
       padding: 0.9rem;
       border: 1px solid black;
       border-radius: 25px;
       width: 32rem;
+      @include respond-to(small) {
+        width: 100%;
+        padding: 0.6rem;
+      }
       input {
         width: 100%;
         font-size: 1.1rem;
@@ -23,8 +35,12 @@
       }
       i {
         position: absolute;
-        bottom: 13px;
+        font-size: 1.1rem;
+        bottom: 17px;
         right: 15px;
+        @include respond-to(small) {
+          bottom: 12px;
+        }
       }
     }
     select {
@@ -32,12 +48,25 @@
       border-radius: 25px;
       width: 30rem;
       font-size: 1.1rem;
+      @include respond-to(small) {
+        width: 100%;
+        padding: 0.6rem;
+      }
     }
   }
   .favorites__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+    @include respond-to(xxlarge) {
+      gap: 1rem;
+    }
+    @include respond-to(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond-to(small) {
+      grid-template-columns: repeat(1, 1fr);
+    }
     .card {
       position: relative;
       overflow: hidden;
@@ -58,6 +87,15 @@
         height: 30rem;
         border-radius: 20px;
         overflow: hidden;
+        @include respond-to(xlarge) {
+          height: 23rem;
+        }
+        @include respond-to(large) {
+          height: 18rem;
+        }
+        @include respond-to(small) {
+          height: 100%;
+        }
         img {
           position: relative;
           width: 100%;

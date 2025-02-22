@@ -1025,11 +1025,23 @@ footer .footer__list ul li a:hover {
     width: 90%;
   }
 }
+@media (max-width: 480px) {
+  #favorites {
+    gap: 2rem;
+    margin: 2rem auto;
+  }
+}
 #favorites .favorites__sort {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+}
+@media (max-width: 480px) {
+  #favorites .favorites__sort {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 }
 #favorites .favorites__sort .favorites__search {
   position: relative;
@@ -1037,6 +1049,12 @@ footer .footer__list ul li a:hover {
   border: 1px solid black;
   border-radius: 25px;
   width: 32rem;
+}
+@media (max-width: 480px) {
+  #favorites .favorites__sort .favorites__search {
+    width: 100%;
+    padding: 0.6rem;
+  }
 }
 #favorites .favorites__sort .favorites__search input {
   width: 100%;
@@ -1046,8 +1064,14 @@ footer .footer__list ul li a:hover {
 }
 #favorites .favorites__sort .favorites__search i {
   position: absolute;
-  bottom: 13px;
+  font-size: 1.1rem;
+  bottom: 17px;
   right: 15px;
+}
+@media (max-width: 480px) {
+  #favorites .favorites__sort .favorites__search i {
+    bottom: 12px;
+  }
 }
 #favorites .favorites__sort select {
   padding: 0.9rem;
@@ -1055,10 +1079,31 @@ footer .footer__list ul li a:hover {
   width: 30rem;
   font-size: 1.1rem;
 }
+@media (max-width: 480px) {
+  #favorites .favorites__sort select {
+    width: 100%;
+    padding: 0.6rem;
+  }
+}
 #favorites .favorites__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+}
+@media (max-width: 1468px) {
+  #favorites .favorites__cards {
+    gap: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #favorites .favorites__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  #favorites .favorites__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 #favorites .favorites__cards .card {
   position: relative;
@@ -1077,6 +1122,21 @@ footer .footer__list ul li a:hover {
   height: 30rem;
   border-radius: 20px;
   overflow: hidden;
+}
+@media (max-width: 1199px) {
+  #favorites .favorites__cards .card .favorites__img {
+    height: 23rem;
+  }
+}
+@media (max-width: 991px) {
+  #favorites .favorites__cards .card .favorites__img {
+    height: 18rem;
+  }
+}
+@media (max-width: 480px) {
+  #favorites .favorites__cards .card .favorites__img {
+    height: 100%;
+  }
 }
 #favorites .favorites__cards .card .favorites__img img {
   position: relative;
