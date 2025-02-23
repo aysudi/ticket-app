@@ -43,24 +43,4 @@ document.addEventListener("DOMContentLoaded", async () => {
       localStorage.clear("userID");
     });
   }
-  //   else {
-  //     header.innerHTML = "";
-  //     header.innerHTML += `
-  //     <div class="header__icons icon">
-  //         <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
-  //         <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
-  //       </div>
-  //       <div class="header__profile">
-  //         <div class="header__icon--profile icon">
-  //           <i class="fa-regular fa-user"></i>
-  //         </div>
-  //         <ul class="header__dropdown">
-  //           <li><a href="./index.html">Home</a></li>
-  //           <li><a href="./signIn.html">Log In</a></li>
-  //           <li><a href="./signUp.html">Sign Up</a></li>
-  //           <li><a href="./events.html">Events</a></li>
-  //         </ul>
-  //       </div>
-  //   `;
-  //   }
 });
