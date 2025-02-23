@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   //     email: document.querySelector("#email"),
   //     password: document.querySelector("password"),
   //   };
-
   const apiResponse = await controller.getAll(endpoints.events);
   const basketItems = JSON.parse(localStorage.getItem("basket"));
   let tickets = apiResponse.data.filter((x) =>
@@ -21,6 +20,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const increaseButtons = document.querySelectorAll(".increase");
   const decreaseButtons = document.querySelectorAll(".decrease");
+  const deleteButtons = document.querySelectorAll(".delete");
+  const subTotal = document.querySelector(".subtotal");
+  const prices = document.querySelectorAll(".price");
+  let totalPrice = 0;
 
   increaseButtons.forEach((increaseBtn) => {
     const id = increaseBtn.getAttribute("data-id");
@@ -37,6 +40,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       this.parentElement.nextElementSibling.textContent = `${
         validPrice.price * validItem.quantity
       }$`;
+      totalPrice += validPrice.price;
+      subTotal.textContent = totalPrice;
     });
 
     increaseBtn.parentElement.nextElementSibling.textContent = `${
@@ -59,10 +64,34 @@ document.addEventListener("DOMContentLoaded", async () => {
       this.parentElement.nextElementSibling.textContent = `${
         validPrice.price * validItem.quantity
       }$`;
+      totalPrice -= validPrice.price;
+      subTotal.textContent = totalPrice;
     });
 
     decreaseBtn.parentElement.nextElementSibling.textContent = `${
       validPrice.price * validItem.quantity
     }$`;
   });
+
+  deleteButtons.forEach((deleteBtn) => {
+    deleteBtn.addEventListener("click", function () {
+      const id = this.getAttribute("data-id");
+
+      const validItem = basketApp.itemsArr.find((x) => x.id == id);
+      const validPrice = apiResponse.data.find((x) => x.id == id);
+
+      if (validItem && validPrice) {
+        totalPrice -= validPrice.price * validItem.quantity;
+        subTotal.textContent = totalPrice;
+      }
+
+      this.parentElement.parentElement.remove();
+      basketApp.removeBasketItem(id, "basket");
+    });
+  });
+
+  prices.forEach(
+    (price) => (totalPrice += Number(price.textContent.split("$")[0]))
+  );
+  subTotal.textContent = totalPrice;
 });

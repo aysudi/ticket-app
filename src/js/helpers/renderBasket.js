@@ -25,7 +25,7 @@ export function renderBasket(arr) {
                     </div>
                   </div>
                   <span class="price">${ticket.price}$</span>
-                  <i class="trash fa-solid fa-trash"></i>
+                  <i data-id="${ticket.id}" class="delete fa-solid fa-trash"></i>
                 </div>
               </div>
     `;
