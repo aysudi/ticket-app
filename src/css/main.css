@@ -1178,7 +1178,6 @@ footer .footer__list ul li a:hover {
   justify-content: space-between;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  gap: 1.5rem;
   width: 1300px;
   margin: 5rem auto;
 }
@@ -1197,12 +1196,23 @@ footer .footer__list ul li a:hover {
     width: 90%;
   }
 }
+@media (max-width: 768px) {
+  #basket .basket {
+    flex-direction: column;
+    margin: 3rem auto;
+  }
+}
 #basket .basket .tickets {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
   width: 100%;
   padding: 2rem;
+}
+@media (max-width: 991px) {
+  #basket .basket .tickets {
+    padding: 1.4rem;
+  }
 }
 #basket .basket .tickets .tickets__cards {
   display: flex;
@@ -1216,13 +1226,35 @@ footer .footer__list ul li a:hover {
   padding: 1rem 0;
   border-bottom: 1px solid grey;
 }
+@media (max-width: 991px) {
+  #basket .basket .tickets .tickets__cards .card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 #basket .basket .tickets .tickets__cards .card .event {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 1199px) {
+  #basket .basket .tickets .tickets__cards .card .event {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 991px) {
+  #basket .basket .tickets .tickets__cards .card .event {
+    width: 100%;
+    justify-content: start;
+  }
+}
 #basket .basket .tickets .tickets__cards .card .event .img__box {
   width: 6.5rem;
+}
+@media (max-width: 1199px) {
+  #basket .basket .tickets .tickets__cards .card .event .img__box {
+    width: 5.5rem;
+  }
 }
 #basket .basket .tickets .tickets__cards .card .event .img__box img {
   width: 100%;
@@ -1230,6 +1262,11 @@ footer .footer__list ul li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 7px;
+}
+#basket .basket .tickets .tickets__cards .card .event .text__box {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #basket .basket .tickets .tickets__cards .card .event .text__box p {
   font-weight: 700;
@@ -1243,6 +1280,17 @@ footer .footer__list ul li a:hover {
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 1199px) {
+  #basket .basket .tickets .tickets__cards .card .price__box {
+    gap: 0.6rem;
+  }
+}
+@media (max-width: 991px) {
+  #basket .basket .tickets .tickets__cards .card .price__box {
+    width: 100%;
+    justify-content: end;
+  }
+}
 #basket .basket .tickets .tickets__cards .card .price__box .quantity__box {
   display: flex;
   align-items: center;
@@ -1255,6 +1303,13 @@ footer .footer__list ul li a:hover {
   border: 3px solid #fedd03;
   cursor: pointer;
 }
+@media (max-width: 1199px) {
+  #basket .basket .tickets .tickets__cards .card .price__box .quantity__box .decrease,
+  #basket .basket .tickets .tickets__cards .card .price__box .quantity__box .increase {
+    border: none;
+    width: 100%;
+  }
+}
 #basket .basket .tickets .tickets__cards .card .price__box .quantity__box .decrease span,
 #basket .basket .tickets .tickets__cards .card .price__box .quantity__box .increase span {
   display: flex;
@@ -1263,9 +1318,20 @@ footer .footer__list ul li a:hover {
   font-size: 1.4rem;
   font-weight: 700;
 }
+@media (max-width: 1199px) {
+  #basket .basket .tickets .tickets__cards .card .price__box .quantity__box .decrease span,
+  #basket .basket .tickets .tickets__cards .card .price__box .quantity__box .increase span {
+    font-size: 1.2rem;
+  }
+}
 #basket .basket .tickets .tickets__cards .card .price__box .quantity__box .quantity {
   font-size: 1.6rem;
   font-weight: 700;
+}
+@media (max-width: 1199px) {
+  #basket .basket .tickets .tickets__cards .card .price__box .quantity__box .quantity {
+    font-size: 1.3rem;
+  }
 }
 #basket .basket .tickets .tickets__cards .card .price__box .price {
   padding: 1rem 1.9rem;
@@ -1273,6 +1339,12 @@ footer .footer__list ul li a:hover {
   font-size: 1.2rem;
   font-weight: 700;
   background-color: #fedd03;
+}
+@media (max-width: 1199px) {
+  #basket .basket .tickets .tickets__cards .card .price__box .price {
+    padding: 0.8rem 1.3rem;
+    font-size: 1.1rem;
+  }
 }
 #basket .basket .tickets .tickets__cards .card .price__box .delete {
   padding: 1rem 1.2rem;
@@ -1282,6 +1354,12 @@ footer .footer__list ul li a:hover {
   border-radius: 50%;
   cursor: pointer;
 }
+@media (max-width: 1199px) {
+  #basket .basket .tickets .tickets__cards .card .price__box .delete {
+    font-size: 1.1rem;
+    padding: 0.9rem 1rem;
+  }
+}
 #basket .basket .tickets h4 {
   font-size: 1.3rem;
   margin-top: 1rem;
@@ -1289,26 +1367,47 @@ footer .footer__list ul li a:hover {
 #basket .basket .users {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.4rem;
   padding: 2rem 1.7rem;
   border-left: 1px solid grey;
 }
+@media (max-width: 768px) {
+  #basket .basket .users {
+    justify-content: center;
+    align-items: center;
+    padding: 1.4rem;
+    border-top: 1px solid grey;
+    border-left: none;
+    width: 90%;
+    margin: 2rem auto 0;
+  }
+}
 #basket .basket .users h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: rgb(79, 79, 79);
 }
 #basket .basket .users form {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.8rem;
 }
 #basket .basket .users form input {
   background-color: transparent;
   font-size: 1.1rem;
   border-radius: 10px;
   border: 1px solid grey;
-  padding: 0.4rem 1rem;
+  padding: 0.7rem 1rem;
   width: 15rem;
+}
+@media (max-width: 768px) {
+  #basket .basket .users form input {
+    width: 22rem;
+  }
+}
+@media (max-width: 480px) {
+  #basket .basket .users form input {
+    width: 100%;
+  }
 }
 #basket .basket .users button {
   width: 100%;
@@ -1319,4 +1418,9 @@ footer .footer__list ul li a:hover {
   font-weight: 700;
   padding: 0.9rem 0;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  #basket .basket .users button {
+    width: 9rem;
+  }
 }/*# sourceMappingURL=main.css.map */
