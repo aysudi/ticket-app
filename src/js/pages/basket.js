@@ -2,6 +2,7 @@ import { LocalItems } from "../classes/localItems.js";
 import { renderBasket } from "../helpers/renderBasket.js";
 import { endpoints } from "../services/api.js";
 import controller from "../services/request.js";
+import Swal from "sweetalert2";
 
 let basketApp = new LocalItems("basket");
 document.addEventListener("DOMContentLoaded", async () => {
@@ -75,18 +76,35 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   deleteButtons.forEach((deleteBtn) => {
     deleteBtn.addEventListener("click", function () {
-      const id = this.getAttribute("data-id");
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "Deleted!",
+            text: "Your ticket has been deleted.",
+            icon: "success",
+          });
+          const id = this.getAttribute("data-id");
 
-      const validItem = basketApp.itemsArr.find((x) => x.id == id);
-      const validPrice = apiResponse.data.find((x) => x.id == id);
+          const validItem = basketApp.itemsArr.find((x) => x.id == id);
+          const validPrice = apiResponse.data.find((x) => x.id == id);
 
-      if (validItem && validPrice) {
-        totalPrice -= validPrice.price * validItem.quantity;
-        subTotal.textContent = totalPrice;
-      }
+          if (validItem && validPrice) {
+            totalPrice -= validPrice.price * validItem.quantity;
+            subTotal.textContent = totalPrice;
+          }
 
-      this.parentElement.parentElement.remove();
-      basketApp.removeBasketItem(id, "basket");
+          this.parentElement.parentElement.remove();
+          basketApp.removeBasketItem(id, "basket");
+        }
+      });
     });
   });
 

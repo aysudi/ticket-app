@@ -296,8 +296,15 @@
       "password": "Hashed_password_1",
       "balance": 500,
       "profilePictureURL": "https://example.com/images/admin-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2022-01-01",
+      "favorites": [
+        {
+          "id": 3
+        },
+        {
+          "id": 7
+        }
+      ],
+      "accountCreationDate": "01/01/2022",
       "totalSpentMoney": 0
     },
     {
@@ -309,8 +316,15 @@
       "password": "Hashed_password_2",
       "balance": 150,
       "profilePictureURL": "https://example.com/images/johnny-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-05-15",
+      "favorites": [
+        {
+          "id": 5
+        },
+        {
+          "id": 9
+        }
+      ],
+      "accountCreationDate": "05/15/2023",
       "totalSpentMoney": 80
     },
     {
@@ -322,8 +336,15 @@
       "password": "Hashed_password_3",
       "balance": 75,
       "profilePictureURL": "https://example.com/images/mike-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-07-12",
+      "favorites": [
+        {
+          "id": 2
+        },
+        {
+          "id": 6
+        }
+      ],
+      "accountCreationDate": "07/12/2023",
       "totalSpentMoney": 50
     },
     {
@@ -335,8 +356,15 @@
       "password": "Hashed_password_4",
       "balance": 120,
       "profilePictureURL": "https://example.com/images/jenny-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2022-03-01",
+      "favorites": [
+        {
+          "id": 8
+        },
+        {
+          "id": 14
+        }
+      ],
+      "accountCreationDate": "03/01/2022",
       "totalSpentMoney": 110
     },
     {
@@ -348,8 +376,15 @@
       "password": "Hashed_password_5",
       "balance": 200,
       "profilePictureURL": "https://example.com/images/susan-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2021-09-20",
+      "favorites": [
+        {
+          "id": 1
+        },
+        {
+          "id": 13
+        }
+      ],
+      "accountCreationDate": "09/20/2021",
       "totalSpentMoney": 250
     },
     {
@@ -361,8 +396,15 @@
       "password": "Hashed_password_6",
       "balance": 100,
       "profilePictureURL": "https://example.com/images/alex-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-01-22",
+      "favorites": [
+        {
+          "id": 10
+        },
+        {
+          "id": 12
+        }
+      ],
+      "accountCreationDate": "01/22/2023",
       "totalSpentMoney": 60
     },
     {
@@ -374,8 +416,15 @@
       "password": "Hashed_password_7",
       "balance": 80,
       "profilePictureURL": "https://example.com/images/emily-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-06-10",
+      "favorites": [
+        {
+          "id": 4
+        },
+        {
+          "id": 11
+        }
+      ],
+      "accountCreationDate": "06/10/2023",
       "totalSpentMoney": 30
     },
     {
@@ -387,8 +436,15 @@
       "password": "Hashed_password_8",
       "balance": 50,
       "profilePictureURL": "https://example.com/images/jack-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-03-25",
+      "favorites": [
+        {
+          "id": 3
+        },
+        {
+          "id": 9
+        }
+      ],
+      "accountCreationDate": "03/25/2023",
       "totalSpentMoney": 20
     },
     {
@@ -400,8 +456,15 @@
       "password": "Hashed_password_9",
       "balance": 300,
       "profilePictureURL": "https://example.com/images/olivia-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2022-07-14",
+      "favorites": [
+        {
+          "id": 2
+        },
+        {
+          "id": 6
+        }
+      ],
+      "accountCreationDate": "07/14/2022",
       "totalSpentMoney": 150
     },
     {
@@ -413,8 +476,15 @@
       "password": "Hashed_password_10",
       "balance": 220,
       "profilePictureURL": "https://example.com/images/lucas-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2022-11-05",
+      "favorites": [
+        {
+          "id": 1
+        },
+        {
+          "id": 7
+        }
+      ],
+      "accountCreationDate": "11/05/2022",
       "totalSpentMoney": 90
     },
     {
@@ -426,8 +496,15 @@
       "password": "Hashed_password_11",
       "balance": 180,
       "profilePictureURL": "https://example.com/images/sophia-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-02-28",
+      "favorites": [
+        {
+          "id": 5
+        },
+        {
+          "id": 14
+        }
+      ],
+      "accountCreationDate": "02/28/2023",
       "totalSpentMoney": 70
     },
     {
@@ -439,8 +516,15 @@
       "password": "Hashed_password_12",
       "balance": 60,
       "profilePictureURL": "https://example.com/images/benjamin-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-08-10",
+      "favorites": [
+        {
+          "id": 8
+        },
+        {
+          "id": 13
+        }
+      ],
+      "accountCreationDate": "08/10/2023",
       "totalSpentMoney": 10
     },
     {
@@ -452,8 +536,15 @@
       "password": "Hashed_password_13",
       "balance": 90,
       "profilePictureURL": "https://example.com/images/mia-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-04-22",
+      "favorites": [
+        {
+          "id": 2
+        },
+        {
+          "id": 10
+        }
+      ],
+      "accountCreationDate": "04/22/2023",
       "totalSpentMoney": 40
     },
     {
@@ -465,8 +556,15 @@
       "password": "Hashed_password_14",
       "balance": 110,
       "profilePictureURL": "https://example.com/images/nathan-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-09-12",
+      "favorites": [
+        {
+          "id": 3
+        },
+        {
+          "id": 12
+        }
+      ],
+      "accountCreationDate": "09/12/2023",
       "totalSpentMoney": 60
     },
     {
@@ -478,9 +576,42 @@
       "password": "Hashed_password_15",
       "balance": 130,
       "profilePictureURL": "https://example.com/images/ella-profile.jpg",
-      "favorites": [],
-      "accountCreationDate": "2023-02-19",
+      "favorites": [
+        {
+          "id": 6
+        },
+        {
+          "id": 9
+        }
+      ],
+      "accountCreationDate": "02/19/2023",
       "totalSpentMoney": 50
+    },
+    {
+      "id": "0483",
+      "role": "client",
+      "username": "kim_fox",
+      "fullName": "Kimberly Fox",
+      "email": "kim@example.com",
+      "password": "Kim_fox_321",
+      "balance": 0,
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
+      "favorites": [],
+      "accountCreationDate": "02/23/2025",
+      "totalSpentMoney": 0
+    },
+    {
+      "id": "b8d3",
+      "role": "client",
+      "username": "nathaniel_c",
+      "fullName": "Nathaniel Clarke",
+      "email": "nathaniel@example.com",
+      "password": "Nat@clarke1",
+      "balance": 0,
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
+      "favorites": [],
+      "accountCreationDate": "02/23/2025",
+      "totalSpentMoney": 0
     }
   ]
 }
