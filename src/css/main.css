@@ -538,11 +538,13 @@ footer .footer__list ul li a:hover {
   text-decoration: underline;
 }
 
-#sign {
-  background-image: url("../assets/images/sign-bgc.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media (max-width: 768px) {
+  #sign {
+    background-image: url("../assets/images/sign-bgc.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .sign {

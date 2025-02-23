@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   //   const basketInputs = {
   //     fullName: document.querySelector("#full-name"),
   //     email: document.querySelector("#email"),
-  //     password: document.querySelector("password"),
+  //     password: document.querySelector("#password"),
   //   };
   const apiResponse = await controller.getAll(endpoints.events);
   const basketItems = JSON.parse(localStorage.getItem("basket"));
