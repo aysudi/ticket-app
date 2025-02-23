@@ -35,15 +35,35 @@
               <a href="./signIn.html">Login</a>
             </p>
             <form class="sign__form sign-up__form">
-              <input type="text" placeholder="Full Name" />
-              <input type="text" placeholder="Username" />
-              <input type="text" placeholder="Email" />
+              <input
+                id="full-name"
+                type="text"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                id="username"
+                type="text"
+                placeholder="Username"
+                required
+              />
+              <input id="email" type="text" placeholder="Email" required />
               <div class="password__input">
-                <input type="password" placeholder="Password" />
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
                 <i class="fa-regular fa-eye-slash"></i>
               </div>
               <div class="password__input">
-                <input type="password" placeholder="Confirm Password" />
+                <input
+                  id="confirm-password"
+                  type="password"
+                  placeholder="Confirm Password"
+                  required
+                />
                 <i class="fa-regular fa-eye-slash"></i>
               </div>
               <button type="submit">Sign Up</button>
@@ -53,5 +73,6 @@
         <a href="index.html" class="back sign__up-back">Home</a>
       </section>
     </main>
+    <script type="module" src="./src/js/pages/register.js"></script>
   </body>
 </html>
