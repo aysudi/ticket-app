@@ -1,6 +1,7 @@
 import Swal from "sweetalert2";
 import { endpoints } from "../services/api.js";
 import controller from "../services/request.js";
+import { LocalItems } from "../classes/localItems.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const loginInputs = {
@@ -19,6 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (validUser) {
+      const userApp = new LocalItems("userID");
+      const newUser = { id: validUser.id };
+      userApp.add(newUser, "userID");
       Swal.fire({
         title: "Successfully logged!",
         icon: "success",
