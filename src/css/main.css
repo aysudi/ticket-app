@@ -1272,7 +1272,7 @@ footer .footer__list ul li a:hover {
   font-weight: 700;
   background-color: #fedd03;
 }
-#basket .basket .tickets .tickets__cards .card .price__box .trash {
+#basket .basket .tickets .tickets__cards .card .price__box .delete {
   padding: 1rem 1.2rem;
   color: white;
   font-size: 1.2rem;

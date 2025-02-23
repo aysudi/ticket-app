@@ -5,8 +5,8 @@ export class LocalItems {
       this.itemsArr = [];
       localStorage.setItem(el, JSON.stringify([]));
     } else {
-      const localFavorites = JSON.parse(localStorage.getItem(el));
-      this.itemsArr = [...localFavorites];
+      const localItems = JSON.parse(localStorage.getItem(el));
+      this.itemsArr = [...localItems];
     }
   }
 
@@ -18,16 +18,20 @@ export class LocalItems {
     localStorage.setItem(el, JSON.stringify([...this.itemsArr]));
   }
 
+  removeBasketItem(id, el) {
+    this.itemsArr = this.itemsArr.filter((item) => item.id != id);
+    localStorage.setItem(el, JSON.stringify([...this.itemsArr]));
+  }
+
   decreaseBasketItemQuantity(id, el) {
     const found = this.itemsArr.find((x) => x.id == id);
     if (found) {
       if (found.quantity == 1) {
-        this.itemsArr.removeBasketItem(id);
+        this.itemsArr.removeBasketItem(id, el);
       } else {
         found.quantity--;
       }
     }
-
     localStorage.setItem(el, JSON.stringify([...this.itemsArr]));
   }
 
@@ -36,7 +40,6 @@ export class LocalItems {
     if (found) {
       found.quantity++;
     }
-
     localStorage.setItem(el, JSON.stringify([...this.itemsArr]));
   }
 }
