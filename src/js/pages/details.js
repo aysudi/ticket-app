@@ -14,16 +14,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const favBtn = document.querySelector(".fav-btn");
   const basketBtn = document.querySelector(".basket-btn");
-  const newItem = { id: favBtn.getAttribute("data-id") };
+  const newFavoriteItem = { id: favBtn.getAttribute("data-id") };
+  const newBasketItem = { id: favBtn.getAttribute("data-id"), quantity: 1 };
   favApp = new LocalItems("favorites");
   basketApp = new LocalItems("basket");
 
-  basketBtn.addEventListener("click", (e) => {
-    basketApp.add(newItem, "basket");
+  basketBtn.addEventListener("click", () => {
+    basketApp.add(newBasketItem, "basket");
   });
 
   favBtn.addEventListener("click", (e) => {
-    favApp.add(newItem, "favorites");
+    favApp.add(newFavoriteItem, "favorites");
     e.target.style.border = "3px solid #fedd03";
     e.target.style.color = "#fedd03";
   });
