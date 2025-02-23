@@ -1,0 +1,66 @@
+document.addEventListener("DOMContentLoaded", async () => {
+  const header = document.querySelector(".header__right");
+  const userID = JSON.parse(localStorage.getItem("userID"));
+  if (userID) {
+    header.innerHTML = "";
+    header.innerHTML += `
+    <div class="header__icons icon">
+          <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        <div class="header__profile">
+          <div class="header__icon--profile icon">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <ul class="header__dropdown">
+            <li><a href="./index.html">Home</a></li>
+            <li class="log-out"><a href="./signIn.html">Log Out</a></li>
+            <li><a href="./signUp.html">Profile</a></li>
+            <li><a href="./events.html">Events</a></li>
+          </ul>
+        </div>
+    `;
+    const logOut = document.querySelector(".log-out");
+    logOut.addEventListener("click", () => {
+      header.innerHTML = "";
+      header.innerHTML += `
+      <div class="header__icons icon">
+          <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        <div class="header__profile">
+          <div class="header__icon--profile icon">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <ul class="header__dropdown">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./signIn.html">Log In</a></li>
+            <li><a href="./signUp.html">Sign Up</a></li>
+            <li><a href="./events.html">Events</a></li>
+          </ul>
+        </div>
+    `;
+      localStorage.clear("userID");
+    });
+  }
+  //   else {
+  //     header.innerHTML = "";
+  //     header.innerHTML += `
+  //     <div class="header__icons icon">
+  //         <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  //         <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+  //       </div>
+  //       <div class="header__profile">
+  //         <div class="header__icon--profile icon">
+  //           <i class="fa-regular fa-user"></i>
+  //         </div>
+  //         <ul class="header__dropdown">
+  //           <li><a href="./index.html">Home</a></li>
+  //           <li><a href="./signIn.html">Log In</a></li>
+  //           <li><a href="./signUp.html">Sign Up</a></li>
+  //           <li><a href="./events.html">Events</a></li>
+  //         </ul>
+  //       </div>
+  //   `;
+  //   }
+});

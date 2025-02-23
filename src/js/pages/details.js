@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     e.target.style.color = "#fedd03";
   });
   const favItems = JSON.parse(localStorage.getItem("favorites")) || [];
-  const validItem = favItems.find((x) => x.id == newItem.id);
+  const validItem = favItems.find((x) => x.id == newFavoriteItem.id);
   if (validItem) {
     favBtn.style.border = "3px solid #fedd03";
     favBtn.style.color = "#fedd03";

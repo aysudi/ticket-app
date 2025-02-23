@@ -6,11 +6,12 @@ import Swal from "sweetalert2";
 
 let basketApp = new LocalItems("basket");
 document.addEventListener("DOMContentLoaded", async () => {
-  //   const basketInputs = {
-  //     fullName: document.querySelector("#full-name"),
-  //     email: document.querySelector("#email"),
-  //     password: document.querySelector("#password"),
-  //   };
+  const basketInputs = {
+    fullName: document.querySelector("#full-name"),
+    email: document.querySelector("#email"),
+    password: document.querySelector("#password"),
+  };
+  //   const usersResponse = await controller.getAll(endpoints.users);
   const apiResponse = await controller.getAll(endpoints.events);
   const basketItems = JSON.parse(localStorage.getItem("basket"));
   let tickets = apiResponse.data.filter((x) =>
