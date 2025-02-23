@@ -8,8 +8,8 @@ export function renderDetails(obj) {
             alt=""
           />
           <div class="details__icons">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i data-id=${obj.id} class="fa-solid fa-heart favBtn"></i>
+            <i data-id=${obj.id} class="fa-solid fa-cart-shopping basket-btn"></i>
+            <i data-id=${obj.id} class="fa-solid fa-heart fav-btn"></i>
           </div>
         </div>
         <div class="details__info">

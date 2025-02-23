@@ -1,9 +1,10 @@
 import { renderDetails } from "../helpers/renderDetails.js";
 import { endpoints } from "../services/api.js";
 import controller from "../services/request.js";
-import { FavoriteItems } from "../classes/favoriteItems.js";
+import { LocalItems } from "../classes/localItems.js";
 
 let favApp = undefined;
+let basketApp = undefined;
 document.addEventListener("DOMContentLoaded", async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const detailID = urlParams.get("id");
@@ -11,12 +12,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   const validEvent = apiResponse.data.find((x) => x.id == detailID);
   renderDetails(validEvent);
 
-  const favBtn = document.querySelector(".favBtn");
+  const favBtn = document.querySelector(".fav-btn");
+  const basketBtn = document.querySelector(".basket-btn");
   const newItem = { id: favBtn.getAttribute("data-id") };
+  favApp = new LocalItems("favorites");
+  basketApp = new LocalItems("basket");
+
+  basketBtn.addEventListener("click", (e) => {
+    basketApp.add(newItem, "basket");
+  });
 
   favBtn.addEventListener("click", (e) => {
-    favApp = new FavoriteItems();
-    favApp.add(newItem);
+    favApp.add(newItem, "favorites");
     e.target.style.border = "3px solid #fedd03";
     e.target.style.color = "#fedd03";
   });
