@@ -1,8 +1,10 @@
 #sign {
-  background-image: url("../assets/images/sign-bgc.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include respond-to(medium) {
+    background-image: url("../assets/images/sign-bgc.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .sign {
