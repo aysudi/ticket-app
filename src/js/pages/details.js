@@ -2,6 +2,7 @@ import { renderDetails } from "../helpers/renderDetails.js";
 import { endpoints } from "../services/api.js";
 import controller from "../services/request.js";
 import { LocalItems } from "../classes/localItems.js";
+import Swal from "sweetalert2";
 
 let favApp = undefined;
 let basketApp = undefined;
@@ -19,14 +20,34 @@ document.addEventListener("DOMContentLoaded", async () => {
   favApp = new LocalItems("favorites");
   basketApp = new LocalItems("basket");
 
+  const user = JSON.parse(localStorage.getItem("userID"));
+
   basketBtn.addEventListener("click", () => {
-    basketApp.add(newBasketItem, "basket");
+    if (user) {
+      basketApp.add(newBasketItem, "basket");
+      Swal.fire({
+        title: "Added to basket!",
+        icon: "success",
+        draggable: true,
+      });
+    } else {
+      window.location.href = "./signIn.html";
+    }
   });
 
   favBtn.addEventListener("click", (e) => {
-    favApp.add(newFavoriteItem, "favorites");
-    e.target.style.border = "3px solid #fedd03";
-    e.target.style.color = "#fedd03";
+    if (user) {
+      Swal.fire({
+        title: "Added to favorites!",
+        icon: "success",
+        draggable: true,
+      });
+      favApp.add(newFavoriteItem, "favorites");
+      e.target.style.border = "3px solid #fedd03";
+      e.target.style.color = "#fedd03";
+    } else {
+      window.location.href = "./signIn.html";
+    }
   });
   const favItems = JSON.parse(localStorage.getItem("favorites")) || [];
   const validItem = favItems.find((x) => x.id == newFavoriteItem.id);

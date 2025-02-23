@@ -1,6 +1,6 @@
 import { renderFavorites } from "../helpers/renderFavorites.js";
 import { searchItems, sortItems } from "../helpers/sortSearch.js";
-import { endpoints } from "../services/api";
+import { endpoints } from "../services/api.js";
 import controller from "../services/request.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -17,5 +17,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     const sortedList = sortItems(e.target.value, favoritesList);
     renderFavorites(sortedList);
   });
-  console.log(sort.value);
 });
