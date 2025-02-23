@@ -49,59 +49,32 @@
         <div class="basket">
           <div class="tickets">
             <h2>Basket</h2>
-            <div class="ticket__card">
-              <div class="event">
-                <div class="img__box">
-                  <img
-                    src="https://cdn.iticket.az/event/poster_square/oU67VwSInXWdxdJ2msHnBpGyOJqr9NUr1DPNq6jz.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text__box">
-                  <span>Baku Crystal Hall/April 28, 2025</span>
-                  <p>OneRepublic Live</p>
-                  <span>Concert</span>
-                </div>
-              </div>
-              <div class="price__box">
-                <div class="price__text">
-                  <div class="decrease">
-                    <span>-</span>
+            <div class="tickets__cards">
+              <!-- <div class="card">
+                <div class="event">
+                  <div class="img__box">
+                    <img src="${ticket.posterURL}" alt="" />
                   </div>
-                  <span class="price">10$</span>
-                  <div class="increase">
-                    <span>+</span>
+                  <div class="text__box">
+                    <span>${ticket.venueName}/${ticket.dateTime}</span>
+                    <p>${ticket.name}</p>
+                    <span>${ticket.category}</span>
                   </div>
                 </div>
-                <i class="trash fa-solid fa-trash"></i>
-              </div>
-            </div>
-            <div class="ticket__card">
-              <div class="event">
-                <div class="img__box">
-                  <img
-                    src="https://cdn.iticket.az/event/poster_square/oU67VwSInXWdxdJ2msHnBpGyOJqr9NUr1DPNq6jz.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="text__box">
-                  <span>Baku Crystal Hall/April 28, 2025</span>
-                  <p>OneRepublic Live</p>
-                  <span>Concert</span>
-                </div>
-              </div>
-              <div class="price__box">
-                <div class="price__text">
-                  <div class="decrease">
-                    <span>-</span>
+                <div class="price__box">
+                  <div class="quantity__box">
+                    <div class="decrease">
+                      <span>-</span>
+                    </div>
+                    <span class="quantity">1</span>
+                    <div data-id="${ticket.id}" class="increase">
+                      <span>+</span>
+                    </div>
                   </div>
-                  <span class="price">10$</span>
-                  <div class="increase">
-                    <span>+</span>
-                  </div>
+                  <span class="price">${ticket.price}</span>
+                  <i class="trash fa-solid fa-trash"></i>
                 </div>
-                <i class="trash fa-solid fa-trash"></i>
-              </div>
+              </div> -->
             </div>
             <h4>Subtotal: 100$</h4>
           </div>
