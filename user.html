@@ -44,6 +44,40 @@
         </div>
       </div>
     </header>
+    <main>
+      <section id="profile">
+        <h3>User Information</h3>
+        <form>
+          <div class="profile__inputs">
+            <div class="form__input">
+              <label for="full-name">Full Name</label>
+              <input id="full-name" type="text" />
+            </div>
+            <div class="form__input">
+              <label for="username">Username</label>
+              <input id="username" type="text" />
+            </div>
+            <div class="form__input">
+              <label for="email">Email</label>
+              <input id="email" type="email" />
+            </div>
+            <div class="form__input">
+              <label for="balance">Balance</label>
+              <input id="balance" type="number" />
+            </div>
+            <div class="form__input">
+              <label for="current-password">Current Password</label>
+              <input id="current-password" type="password" />
+            </div>
+            <div class="form__input">
+              <label for="new-password">New Password</label>
+              <input id="new-password" type="password" />
+            </div>
+          </div>
+          <button type="submit">Update profile</button>
+        </form>
+      </section>
+    </main>
     <footer>
       <div class="footer__logo">
         <div class="footer__img--box">
@@ -105,6 +139,6 @@
       referrerpolicy="no-referrer"
     ></script>
     <script type="module" src="./src/js/helpers/navbar.js"></script>
-    <script type="module" src="./src/js/pages/home.js"></script>
+    <script type="module" src="./src/js/pages/user.js"></script>
   </body>
 </html>

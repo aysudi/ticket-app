@@ -1423,4 +1423,68 @@ footer .footer__list ul li a:hover {
   #basket .basket .users button {
     width: 9rem;
   }
+}
+
+#profile {
+  margin: 3rem auto;
+  width: 1300px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width: 1468px) {
+  #profile {
+    width: 1100px;
+  }
+}
+@media (max-width: 1199px) {
+  #profile {
+    width: 910px;
+  }
+}
+@media (max-width: 1199px) {
+  #profile {
+    width: 90%;
+  }
+}
+#profile h3 {
+  font-size: 1.8rem;
+}
+#profile form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#profile form .profile__inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+#profile form .profile__inputs .form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+#profile form .profile__inputs .form__input input {
+  padding: 0.7rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+#profile form .profile__inputs .form__input label {
+  font-size: 1.1rem;
+}
+#profile form button {
+  width: 23rem;
+  padding: 1rem;
+  border: none;
+  background-color: #fedd03;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

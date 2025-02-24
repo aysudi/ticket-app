@@ -2,6 +2,7 @@ import Swal from "sweetalert2";
 import controller from "../services/request.js";
 import { User } from "../classes/User.js";
 import { endpoints } from "../services/api";
+import { validatePassword } from "../helpers/validatePassword.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const registerInputs = {
@@ -12,12 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     confirmPassword: document.querySelector("#confirm-password"),
   };
   const form = document.querySelector(".sign__form");
-
-  function validatePassword(password) {
-    const regex =
-      /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+{}\[\]:;<>,.?/~\\-]{6,}$/;
-    return regex.test(password);
-  }
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
