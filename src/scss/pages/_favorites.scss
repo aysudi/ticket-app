@@ -8,52 +8,6 @@
     gap: 2rem;
     margin: 2rem auto;
   }
-  .favorites__sort {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    @include respond-to(small) {
-      flex-direction: column;
-      gap: 0.8rem;
-    }
-    .favorites__search {
-      position: relative;
-      padding: 1rem;
-      border: 1px solid black;
-      border-radius: 30px;
-      width: 32rem;
-      @include respond-to(small) {
-        width: 100%;
-        padding: 0.6rem;
-      }
-      input {
-        width: 100%;
-        font-size: 1.1rem;
-        border: none;
-        outline: none;
-      }
-      i {
-        position: absolute;
-        font-size: 1.1rem;
-        bottom: 18px;
-        right: 15px;
-        @include respond-to(small) {
-          bottom: 12px;
-        }
-      }
-    }
-    select {
-      padding: 1rem;
-      border-radius: 30px;
-      width: 30rem;
-      font-size: 1.1rem;
-      @include respond-to(small) {
-        width: 100%;
-        padding: 0.6rem;
-      }
-    }
-  }
   .favorites__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -135,6 +89,53 @@
           color: rgb(82, 82, 82);
         }
       }
+    }
+  }
+}
+
+.events__sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  @include respond-to(small) {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .events__search {
+    position: relative;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 32rem;
+    @include respond-to(small) {
+      width: 100%;
+      padding: 0.6rem;
+    }
+    input {
+      width: 100%;
+      font-size: 1.1rem;
+      border: none;
+      outline: none;
+    }
+    i {
+      position: absolute;
+      font-size: 1.1rem;
+      bottom: 18px;
+      right: 15px;
+      @include respond-to(small) {
+        bottom: 12px;
+      }
+    }
+  }
+  select {
+    padding: 1rem;
+    border-radius: 30px;
+    width: 30rem;
+    font-size: 1.1rem;
+    @include respond-to(small) {
+      width: 100%;
+      padding: 0.6rem;
     }
   }
 }

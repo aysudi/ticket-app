@@ -1,8 +1,10 @@
 import { LocalItems } from "../classes/localItems.js";
+import { generateRandomCode } from "../helpers/generateCode.js";
 import { renderBasket } from "../helpers/renderBasket.js";
 import { endpoints } from "../services/api.js";
 import controller from "../services/request.js";
 import Swal from "sweetalert2";
+import moment from "moment";
 
 let basketApp = new LocalItems("basket");
 document.addEventListener("DOMContentLoaded", async () => {
@@ -11,6 +13,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     email: document.querySelector("#email"),
     password: document.querySelector("#password"),
   };
+  const form = document.querySelector("form");
+
   const apiResponse = await controller.getAll(endpoints.events);
   const basketItems = JSON.parse(localStorage.getItem("basket"));
   let tickets = apiResponse.data.filter((x) =>
@@ -112,4 +116,54 @@ document.addEventListener("DOMContentLoaded", async () => {
     (price) => (totalPrice += Number(price.textContent.split("$")[0]))
   );
   subTotal.textContent = totalPrice;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const userResponse = await controller.getAll(endpoints.users);
+    const user = JSON.parse(localStorage.getItem("userID"));
+    const checkValidUser = userResponse.data.find((x) => x.id == user[0].id);
+
+    if (
+      basketInputs.fullName.value == checkValidUser.fullName &&
+      basketInputs.email.value == checkValidUser.email &&
+      basketInputs.password.value == checkValidUser.password
+    ) {
+      for (const ticket of basketItems) {
+        if (checkValidUser.balance > ticket.price) {
+          const ticketData = {
+            userId: user[0].id,
+            eventId: ticket.id,
+            quantity: ticket.quantity,
+            price: ticket.price,
+            purchaseDate: new Date().toISOString(),
+            ticketCode: generateRandomCode(),
+          };
+          await controller.post(endpoints.tickets, ticketData);
+          const ticketsCards = document.querySelector(".tickets__cards");
+          ticketsCards.innerHTML = "";
+          basketInputs.fullName.value = "";
+          basketInputs.email.value = "";
+          basketInputs.password.value = "";
+          localStorage.removeItem("basket");
+          Swal.fire({
+            title: "Successfully ordered!",
+            icon: "success",
+            draggable: true,
+          });
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "You don't have enough balance!",
+          });
+        }
+      }
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Invalid user information!",
+      });
+    }
+  });
 });

@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const favBtn = document.querySelector(".fav-btn");
   const basketBtn = document.querySelector(".basket-btn");
   const newFavoriteItem = { id: favBtn.getAttribute("data-id") };
-  const newBasketItem = { id: favBtn.getAttribute("data-id"), quantity: 1 };
+  const newBasketItem = {
+    id: favBtn.getAttribute("data-id"),
+    quantity: 1,
+    price: validEvent.price,
+  };
   favApp = new LocalItems("favorites");
   basketApp = new LocalItems("basket");
 
@@ -35,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  favBtn.addEventListener("click", (e) => {
+  favBtn.addEventListener("click", async (e) => {
     if (user) {
       Swal.fire({
         title: "Added to favorites!",
@@ -45,6 +49,13 @@ document.addEventListener("DOMContentLoaded", async () => {
       favApp.add(newFavoriteItem, "favorites");
       e.target.style.border = "3px solid #fedd03";
       e.target.style.color = "#fedd03";
+
+      const localFavs = JSON.parse(localStorage.getItem("favorites"));
+      await controller.updateOne(
+        endpoints.users,
+        { favorites: localFavs },
+        user[0].id
+      );
     } else {
       window.location.href = "./signIn.html";
     }
