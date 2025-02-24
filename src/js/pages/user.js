@@ -38,7 +38,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           userInputs.fullName.value,
           userInputs.username.value,
           userInputs.email.value,
-          userInputs.newPassword.value
+          userInputs.newPassword.value,
+          userInputs.balance.value
         );
         await controller.updateOne(
           endpoints.users,

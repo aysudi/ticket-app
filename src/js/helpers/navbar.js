@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           <ul class="header__dropdown">
             <li><a href="./index.html">Home</a></li>
             <li class="log-out"><a href="./signIn.html">Log Out</a></li>
-            <li><a href="./signUp.html">Profile</a></li>
+            <li><a href="./user.html">Profile</a></li>
             <li><a href="./events.html">Events</a></li>
           </ul>
         </div>

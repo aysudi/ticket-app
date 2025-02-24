@@ -588,13 +588,18 @@
       "totalSpentMoney": 50
     },
     {
+      "0": {
+        "favorites": {
+          "id": "3"
+        }
+      },
       "id": "0483",
       "role": "client",
       "username": "kim_fox",
       "fullName": "Kimberly Fox",
       "email": "kim@example.com",
       "password": "Kim_fox_321n",
-      "balance": 0,
+      "balance": "500",
       "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [],
       "accountCreationDate": "02/24/2025",
@@ -609,9 +614,199 @@
       "password": "Nat@clarke1",
       "balance": 0,
       "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
-      "favorites": [],
+      "favorites": [
+        {
+          "id": "3"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "1"
+        }
+      ],
       "accountCreationDate": "02/23/2025",
       "totalSpentMoney": 0
+    }
+  ],
+  "tickets": [
+    {
+      "id": 1,
+      "userId": 2,
+      "eventId": 1,
+      "quantity": 2,
+      "price": 50,
+      "purchaseDate": "2024-11-10T15:30:00Z",
+      "ticketCode": "TK-001-AB12X"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "eventId": 2,
+      "quantity": 1,
+      "price": 63,
+      "purchaseDate": "2024-11-12T10:00:00Z",
+      "ticketCode": "TK-002-CD34Y"
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "eventId": 3,
+      "quantity": 3,
+      "price": 30,
+      "purchaseDate": "2024-11-14T12:00:00Z",
+      "ticketCode": "TK-003-EF56Z"
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "eventId": 4,
+      "quantity": 1,
+      "price": 25,
+      "purchaseDate": "2024-11-15T18:30:00Z",
+      "ticketCode": "TK-004-GH78A"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "eventId": 5,
+      "quantity": 2,
+      "price": 10,
+      "purchaseDate": "2024-11-16T09:00:00Z",
+      "ticketCode": "TK-005-IJ90B"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "eventId": 2,
+      "quantity": 1,
+      "price": 59,
+      "purchaseDate": "2024-11-17T14:20:00Z",
+      "ticketCode": "TK-006-KL12C"
+    },
+    {
+      "id": 7,
+      "userId": 7,
+      "eventId": 3,
+      "quantity": 2,
+      "price": 40,
+      "purchaseDate": "2024-11-18T19:45:00Z",
+      "ticketCode": "TK-007-MN34D"
+    },
+    {
+      "id": 8,
+      "userId": 8,
+      "eventId": 1,
+      "quantity": 4,
+      "price": 59,
+      "purchaseDate": "2024-11-19T21:00:00Z",
+      "ticketCode": "TK-008-OP56E"
+    },
+    {
+      "id": 9,
+      "userId": 9,
+      "eventId": 4,
+      "quantity": 1,
+      "price": 50,
+      "purchaseDate": "2024-11-20T08:10:00Z",
+      "ticketCode": "TK-009-QR78F"
+    },
+    {
+      "id": 10,
+      "userId": 10,
+      "eventId": 5,
+      "quantity": 3,
+      "price": 11,
+      "purchaseDate": "2024-11-21T13:35:00Z",
+      "ticketCode": "TK-010-ST90G"
+    },
+    {
+      "id": 11,
+      "userId": 11,
+      "eventId": 1,
+      "quantity": 2,
+      "price": 40,
+      "purchaseDate": "2024-11-22T11:15:00Z",
+      "ticketCode": "TK-011-UV12H"
+    },
+    {
+      "id": 12,
+      "userId": 12,
+      "eventId": 3,
+      "quantity": 1,
+      "price": 63,
+      "purchaseDate": "2024-11-23T16:40:00Z",
+      "ticketCode": "TK-012-WX34I"
+    },
+    {
+      "id": 13,
+      "userId": 13,
+      "eventId": 4,
+      "quantity": 3,
+      "price": 8,
+      "purchaseDate": "2024-11-24T20:00:00Z",
+      "ticketCode": "TK-013-YZ56J"
+    },
+    {
+      "id": 14,
+      "userId": 14,
+      "eventId": 2,
+      "quantity": 2,
+      "price": 40,
+      "purchaseDate": "2024-11-25T09:30:00Z",
+      "ticketCode": "TK-014-AA78K"
+    },
+    {
+      "id": 15,
+      "userId": 15,
+      "eventId": 5,
+      "quantity": 1,
+      "price": 15,
+      "purchaseDate": "2024-11-26T17:25:00Z",
+      "ticketCode": "TK-015-BB90L"
+    },
+    {
+      "id": "d60d",
+      "eventId": "1",
+      "quantity": 1,
+      "price": 63,
+      "purchaseDate": "2025-02-24T17:31:33+04:00",
+      "ticketCode": "TK-046-A36SP"
+    },
+    {
+      "id": "2823",
+      "eventId": "3",
+      "quantity": 1,
+      "price": 50,
+      "purchaseDate": "2025-02-24T17:31:33+04:00",
+      "ticketCode": "TK-108-2QE7R"
+    },
+    {
+      "id": "be89",
+      "userId": "0483",
+      "eventId": "1",
+      "quantity": 1,
+      "price": 63,
+      "purchaseDate": "2025-02-24T13:37:30.004Z",
+      "ticketCode": "TK-062-C6356"
+    },
+    {
+      "id": "c23e",
+      "userId": "0483",
+      "eventId": "3",
+      "quantity": 1,
+      "price": 50,
+      "purchaseDate": "2025-02-24T13:37:30.012Z",
+      "ticketCode": "TK-185-UOVUV"
+    },
+    {
+      "id": "422c",
+      "userId": "0483",
+      "eventId": "8",
+      "quantity": 1,
+      "price": 20,
+      "purchaseDate": "2025-02-24T15:01:14.385Z",
+      "ticketCode": "TK-587-EQDIZ"
     }
   ]
 }
