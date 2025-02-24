@@ -4,7 +4,6 @@ import { renderBasket } from "../helpers/renderBasket.js";
 import { endpoints } from "../services/api.js";
 import controller from "../services/request.js";
 import Swal from "sweetalert2";
-import moment from "moment";
 
 let basketApp = new LocalItems("basket");
 document.addEventListener("DOMContentLoaded", async () => {
@@ -145,6 +144,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           basketInputs.email.value = "";
           basketInputs.password.value = "";
           localStorage.removeItem("basket");
+
           Swal.fire({
             title: "Successfully ordered!",
             icon: "success",
@@ -158,6 +158,22 @@ document.addEventListener("DOMContentLoaded", async () => {
           });
         }
       }
+      let spentMoney = Number(checkValidUser.totalSpentMoney);
+      spentMoney += totalPrice;
+
+      let balance = Number(checkValidUser.balance);
+      balance -= totalPrice;
+
+      await controller.updateOne(
+        endpoints.users,
+        {
+          balance: balance,
+          totalSpentMoney: spentMoney,
+        },
+        user[0].id
+      );
+
+      subTotal.textContent = 0;
     } else {
       Swal.fire({
         icon: "error",
