@@ -612,21 +612,15 @@
       "fullName": "Nathaniel Clarke",
       "email": "nathaniel@example.com",
       "password": "Nat@clarke1",
-      "balance": 0,
+      "balance": 140,
       "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
-          "id": "3"
-        },
-        {
-          "id": "2"
-        },
-        {
-          "id": "1"
+          "id": "11"
         }
       ],
-      "accountCreationDate": "02/23/2025",
-      "totalSpentMoney": 0
+      "accountCreationDate": "02/24/2025",
+      "totalSpentMoney": 160
     }
   ],
   "tickets": [
@@ -807,6 +801,123 @@
       "price": 20,
       "purchaseDate": "2025-02-24T15:01:14.385Z",
       "ticketCode": "TK-587-EQDIZ"
+    },
+    {
+      "id": "fb2d",
+      "userId": "b8d3",
+      "eventId": "1",
+      "quantity": 1,
+      "price": 63,
+      "purchaseDate": "2025-02-24T15:34:50.123Z",
+      "ticketCode": "TK-997-CPFPL"
+    },
+    {
+      "id": "f77a",
+      "userId": "b8d3",
+      "eventId": "9",
+      "quantity": 1,
+      "price": 40,
+      "purchaseDate": "2025-02-24T15:34:50.150Z",
+      "ticketCode": "TK-882-2MDA8"
+    },
+    {
+      "id": "a467",
+      "userId": "b8d3",
+      "eventId": "3",
+      "quantity": 1,
+      "price": 50,
+      "purchaseDate": "2025-02-24T15:37:49.832Z",
+      "ticketCode": "TK-860-UF4WY"
+    },
+    {
+      "id": "fd57",
+      "userId": "b8d3",
+      "eventId": "1",
+      "quantity": 1,
+      "price": 63,
+      "purchaseDate": "2025-02-24T15:37:49.856Z",
+      "ticketCode": "TK-600-JTPSI"
+    },
+    {
+      "id": "335c",
+      "userId": "b8d3",
+      "eventId": "4",
+      "quantity": 1,
+      "price": 15,
+      "purchaseDate": "2025-02-24T15:39:31.686Z",
+      "ticketCode": "TK-804-MICV3"
+    },
+    {
+      "id": "d704",
+      "userId": "b8d3",
+      "eventId": "7",
+      "quantity": 1,
+      "price": 15,
+      "purchaseDate": "2025-02-24T15:39:31.709Z",
+      "ticketCode": "TK-970-370O8"
+    },
+    {
+      "id": "039c",
+      "userId": "b8d3",
+      "eventId": "9",
+      "quantity": 1,
+      "price": 40,
+      "purchaseDate": "2025-02-24T15:46:13.079Z",
+      "ticketCode": "TK-527-X0PGD"
+    },
+    {
+      "id": "441d",
+      "userId": "b8d3",
+      "eventId": "10",
+      "quantity": 1,
+      "price": 40,
+      "purchaseDate": "2025-02-24T15:46:13.102Z",
+      "ticketCode": "TK-093-7AIHN"
+    },
+    {
+      "id": "00dd",
+      "userId": "b8d3",
+      "eventId": "6",
+      "quantity": 1,
+      "price": 8,
+      "purchaseDate": "2025-02-24T15:46:13.113Z",
+      "ticketCode": "TK-449-YEVPR"
+    },
+    {
+      "id": "14f2",
+      "userId": "b8d3",
+      "eventId": "8",
+      "quantity": 1,
+      "price": 20,
+      "purchaseDate": "2025-02-24T15:49:14.919Z",
+      "ticketCode": "TK-969-NG4LJ"
+    },
+    {
+      "id": "25e7",
+      "userId": "b8d3",
+      "eventId": "7",
+      "quantity": 1,
+      "price": 15,
+      "purchaseDate": "2025-02-24T15:49:14.945Z",
+      "ticketCode": "TK-652-5OEY7"
+    },
+    {
+      "id": "4b03",
+      "userId": "b8d3",
+      "eventId": "6",
+      "quantity": 1,
+      "price": 8,
+      "purchaseDate": "2025-02-24T15:52:42.041Z",
+      "ticketCode": "TK-226-UBVNQ"
+    },
+    {
+      "id": "2072",
+      "userId": "b8d3",
+      "eventId": "5",
+      "quantity": 1,
+      "price": 11,
+      "purchaseDate": "2025-02-24T15:52:42.057Z",
+      "ticketCode": "TK-191-58LDK"
     }
   ]
 }
