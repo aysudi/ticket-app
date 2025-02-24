@@ -19,6 +19,31 @@
     <title>Ticket App</title>
   </head>
   <body id="sign">
+    <header class="header">
+      <div class="header__logo">
+        <img
+          src="https://www.mall28.az/storage/uploads/k6YjZ8BzjZAYo7oEofbLD51iSuvB5EwLCrowncEF.png"
+          alt="Logo"
+        />
+      </div>
+      <div class="header__right">
+        <div class="header__icons icon">
+          <a href="./basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="./favorites.html"><i class="fa-regular fa-heart"></i></a>
+        </div>
+        <div class="header__profile">
+          <div class="header__icon--profile icon">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <ul class="header__dropdown">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./signIn.html">Log In</a></li>
+            <li><a href="./signUp.html">Sign Up</a></li>
+            <li><a href="./events.html">Events</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="sign sign-up">
         <div class="sign__box">
@@ -70,9 +95,10 @@
             </form>
           </div>
         </div>
-        <a href="index.html" class="back sign__up-back">Home</a>
       </section>
     </main>
+
+    <script type="module" src="./src/js/helpers/navbar.js"></script>
     <script type="module" src="./src/js/pages/register.js"></script>
   </body>
 </html>
