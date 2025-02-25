@@ -288,7 +288,6 @@
   ],
   "users": [
     {
-      "id": 1,
       "role": "admin",
       "username": "admin_tech",
       "fullName": "Admin Tech",
@@ -308,7 +307,6 @@
       "totalSpentMoney": 0
     },
     {
-      "id": 2,
       "role": "client",
       "username": "johnny_events",
       "fullName": "Johnny Events",
@@ -328,7 +326,6 @@
       "totalSpentMoney": 80
     },
     {
-      "id": 3,
       "role": "client",
       "username": "mike_attendee",
       "fullName": "Mike Attendee",
@@ -348,7 +345,6 @@
       "totalSpentMoney": 50
     },
     {
-      "id": 4,
       "role": "client",
       "username": "jenny_tech",
       "fullName": "Jenny Tech",
@@ -368,7 +364,6 @@
       "totalSpentMoney": 110
     },
     {
-      "id": 5,
       "role": "client",
       "username": "susan_smith",
       "fullName": "Susan Smith",
@@ -388,7 +383,6 @@
       "totalSpentMoney": 250
     },
     {
-      "id": 6,
       "role": "client",
       "username": "alex_brown",
       "fullName": "Alex Brown",
@@ -408,7 +402,6 @@
       "totalSpentMoney": 60
     },
     {
-      "id": 7,
       "role": "client",
       "username": "emily_jo",
       "fullName": "Emily Jo",
@@ -428,7 +421,6 @@
       "totalSpentMoney": 30
     },
     {
-      "id": 8,
       "role": "client",
       "username": "jack_miller",
       "fullName": "Jack Miller",
@@ -448,7 +440,6 @@
       "totalSpentMoney": 20
     },
     {
-      "id": 9,
       "role": "client",
       "username": "olivia_white",
       "fullName": "Olivia White",
@@ -468,7 +459,6 @@
       "totalSpentMoney": 150
     },
     {
-      "id": 10,
       "role": "client",
       "username": "lucas_king",
       "fullName": "Lucas King",
@@ -488,7 +478,6 @@
       "totalSpentMoney": 90
     },
     {
-      "id": 11,
       "role": "client",
       "username": "sophia_lee",
       "fullName": "Sophia Lee",
@@ -508,7 +497,6 @@
       "totalSpentMoney": 70
     },
     {
-      "id": 12,
       "role": "client",
       "username": "benjamin_gray",
       "fullName": "Benjamin Gray",
@@ -528,7 +516,6 @@
       "totalSpentMoney": 10
     },
     {
-      "id": 13,
       "role": "client",
       "username": "mia_peters",
       "fullName": "Mia Peters",
@@ -548,7 +535,6 @@
       "totalSpentMoney": 40
     },
     {
-      "id": 14,
       "role": "client",
       "username": "nathan_fox",
       "fullName": "Nathan Fox",
@@ -568,7 +554,6 @@
       "totalSpentMoney": 60
     },
     {
-      "id": 15,
       "role": "client",
       "username": "ella_baker",
       "fullName": "Ella Baker",
@@ -586,44 +571,6 @@
       ],
       "accountCreationDate": "02/19/2023",
       "totalSpentMoney": 50
-    },
-    {
-      "0": {
-        "favorites": {
-          "id": "3"
-        }
-      },
-      "id": "0483",
-      "role": "client",
-      "username": "kim_fox",
-      "fullName": "Kimberly Fox",
-      "email": "kim@example.com",
-      "password": "Kim_fox_321n",
-      "balance": "500",
-      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
-      "favorites": [],
-      "accountCreationDate": "02/24/2025",
-      "totalSpentMoney": 0
-    },
-    {
-      "id": "b8d3",
-      "role": "client",
-      "username": "nathaniel_c",
-      "fullName": "Nathaniel Clarke",
-      "email": "nathaniel@example.com",
-      "password": "Nat@clarke1",
-      "balance": 140,
-      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
-      "favorites": [
-        {
-          "id": "8"
-        },
-        {
-          "id": "2"
-        }
-      ],
-      "accountCreationDate": "02/24/2025",
-      "totalSpentMoney": 160
     }
   ],
   "tickets": [
@@ -780,7 +727,7 @@
     },
     {
       "id": "be89",
-      "userId": "0483",
+      "userId": null,
       "eventId": "1",
       "quantity": 1,
       "price": 63,
@@ -789,7 +736,7 @@
     },
     {
       "id": "c23e",
-      "userId": "0483",
+      "userId": null,
       "eventId": "3",
       "quantity": 1,
       "price": 50,
@@ -798,7 +745,7 @@
     },
     {
       "id": "422c",
-      "userId": "0483",
+      "userId": null,
       "eventId": "8",
       "quantity": 1,
       "price": 20,
@@ -807,7 +754,7 @@
     },
     {
       "id": "fb2d",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "1",
       "quantity": 1,
       "price": 63,
@@ -816,7 +763,7 @@
     },
     {
       "id": "f77a",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "9",
       "quantity": 1,
       "price": 40,
@@ -825,7 +772,7 @@
     },
     {
       "id": "a467",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "3",
       "quantity": 1,
       "price": 50,
@@ -834,7 +781,7 @@
     },
     {
       "id": "fd57",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "1",
       "quantity": 1,
       "price": 63,
@@ -843,7 +790,7 @@
     },
     {
       "id": "335c",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "4",
       "quantity": 1,
       "price": 15,
@@ -852,7 +799,7 @@
     },
     {
       "id": "d704",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "7",
       "quantity": 1,
       "price": 15,
@@ -861,7 +808,7 @@
     },
     {
       "id": "039c",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "9",
       "quantity": 1,
       "price": 40,
@@ -870,7 +817,7 @@
     },
     {
       "id": "441d",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "10",
       "quantity": 1,
       "price": 40,
@@ -879,7 +826,7 @@
     },
     {
       "id": "00dd",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "6",
       "quantity": 1,
       "price": 8,
@@ -888,7 +835,7 @@
     },
     {
       "id": "14f2",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "8",
       "quantity": 1,
       "price": 20,
@@ -897,7 +844,7 @@
     },
     {
       "id": "25e7",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "7",
       "quantity": 1,
       "price": 15,
@@ -906,7 +853,7 @@
     },
     {
       "id": "4b03",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "6",
       "quantity": 1,
       "price": 8,
@@ -915,7 +862,7 @@
     },
     {
       "id": "2072",
-      "userId": "b8d3",
+      "userId": null,
       "eventId": "5",
       "quantity": 1,
       "price": 11,
