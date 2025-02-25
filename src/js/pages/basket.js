@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       basketInputs.password.value == checkValidUser.password
     ) {
       for (const ticket of basketItems) {
-        if (checkValidUser.balance > ticket.price) {
+        if (checkValidUser.balance > totalPrice) {
           const ticketData = {
             userId: user[0].id,
             eventId: ticket.id,
