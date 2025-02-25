@@ -1,4 +1,4 @@
-export function renderUserProfile() {
+export function renderUserProfile(userData) {
   const profileBox = document.querySelector(".user__box");
   profileBox.innerHTML = "";
   profileBox.innerHTML += `
@@ -40,4 +40,11 @@ export function renderUserProfile() {
             <button type="submit">Update profile</button>
           </form>
   `;
+
+  if (userData) {
+    document.querySelector("#full-name").value = userData.fullName;
+    document.querySelector("#username").value = userData.username;
+    document.querySelector("#email").value = userData.email;
+    document.querySelector("#balance").value = userData.balance;
+  }
 }

@@ -7,7 +7,11 @@ import controller from "../services/request.js";
 import Swal from "sweetalert2";
 
 document.addEventListener("DOMContentLoaded", async () => {
-  renderUserProfile();
+  const checkValidUser = JSON.parse(localStorage.getItem("userID"));
+  const apiResponse = await controller.getAll(endpoints.users);
+  const userData = apiResponse.data.find((x) => x.id == checkValidUser[0].id);
+
+  renderUserProfile(userData);
 
   const userInputs = {
     fullName: document.querySelector("#full-name"),
@@ -17,16 +21,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     currentPassword: document.querySelector("#current-password"),
     newPassword: document.querySelector("#new-password"),
   };
-
-  const checkValidUser = JSON.parse(localStorage.getItem("userID"));
-  const apiResponse = await controller.getAll(endpoints.users);
-  const userData = apiResponse.data.find((x) => x.id == checkValidUser[0].id);
-  if (checkValidUser) {
-    userInputs.fullName.value = userData.fullName;
-    userInputs.username.value = userData.username;
-    userInputs.email.value = userData.email;
-    userInputs.balance.value = userData.balance;
-  }
 
   const user = document.querySelector(".user");
   const tickets = document.querySelector(".tickets");
@@ -54,10 +48,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   user.addEventListener("click", () => {
     user.classList.add("selected");
     tickets.classList.remove("selected");
-
     const ticketsBox = document.querySelector(".tickets__box");
     ticketsBox.innerHTML = "";
-    renderUserProfile();
+
+    renderUserProfile(userData);
   });
 
   const form = document.querySelector("form");
@@ -65,11 +59,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     e.preventDefault();
     if (userInputs.currentPassword.value == userData.password) {
       if (validatePassword(userInputs.newPassword.value)) {
-        Swal.fire({
-          title: "Profile updated!",
-          icon: "success",
-          draggable: true,
-        });
         const updatedUser = new User(
           userInputs.fullName.value,
           userInputs.username.value,
@@ -82,6 +71,14 @@ document.addEventListener("DOMContentLoaded", async () => {
           updatedUser,
           checkValidUser[0].id
         );
+        Swal.fire({
+          title: "Profile updated!",
+          icon: "success",
+          draggable: true,
+        });
+
+        userInputs.currentPassword.value = "";
+        userInputs.newPassword.value = "";
       } else {
         Swal.fire({
           icon: "error",
