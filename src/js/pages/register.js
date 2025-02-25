@@ -4,7 +4,7 @@ import { User } from "../classes/User.js";
 import { endpoints } from "../services/api";
 import { validatePassword } from "../helpers/validatePassword.js";
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const registerInputs = {
     fullName: document.querySelector("#full-name"),
     username: document.querySelector("#username"),
@@ -50,4 +50,5 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+  console.log(await controller.getAll(endpoints.users));
 });

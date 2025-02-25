@@ -1625,4 +1625,99 @@ footer .footer__list ul li a:hover {
   #profile .profile__box form button {
     width: 100%;
   }
+}
+
+#admin {
+  margin: 5rem auto;
+  width: 1300px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+@media (max-width: 1468px) {
+  #admin {
+    width: 1100px;
+  }
+}
+@media (max-width: 1199px) {
+  #admin {
+    width: 910px;
+  }
+}
+@media (max-width: 1199px) {
+  #admin {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  #admin {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  #admin {
+    margin: 4rem auto;
+  }
+}
+#admin form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#admin form .admin__inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+@media (max-width: 1199px) {
+  #admin form .admin__inputs {
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  #admin form .admin__inputs {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #admin form .admin__inputs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#admin form .admin__inputs .form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+#admin form .admin__inputs .form__input input {
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+#admin form .admin__inputs .form__input label {
+  font-size: 1.1rem;
+}
+#admin form button {
+  width: 23rem;
+  padding: 1rem;
+  border: none;
+  background-color: #fedd03;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  #admin form button {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
