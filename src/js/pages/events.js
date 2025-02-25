@@ -1,10 +1,10 @@
 import { renderCards } from "../helpers/renderCards.js";
+import { searchItems, sortItems } from "../helpers/sortSearch.js";
 import { endpoints } from "../services/api.js";
 import controller from "../services/request.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const apiResponse = await controller.getAll(endpoints.events);
-  renderCards(apiResponse.data);
 
   const eventsCards = document.querySelectorAll(".card");
   eventsCards.forEach((event) => {
@@ -14,5 +14,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       url.searchParams.set("id", eventID);
       window.location.href = `./details.html?id=${eventID}`;
     });
+  });
+
+  renderCards(apiResponse.data);
+  searchItems(apiResponse.data, renderCards);
+
+  const sort = document.querySelector("#sort");
+  sort.addEventListener("change", (e) => {
+    const sortedList = sortItems(e.target.value, apiResponse.data);
+    renderCards(sortedList);
   });
 });

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     favoriteItems.some((el) => el.id == x.id)
   );
   renderFavorites(favoritesList);
-  searchItems(favoritesList);
+  searchItems(favoritesList, renderFavorites);
 
   const sort = document.querySelector("#sort");
   sort.addEventListener("change", (e) => {

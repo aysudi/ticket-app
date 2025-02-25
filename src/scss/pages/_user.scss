@@ -7,55 +7,141 @@
   flex-direction: column;
   gap: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  @include respond-to(small) {
+  @include respond-to(medium) {
     padding: 1.5rem;
+  }
+  @include respond-to(small) {
     margin: 4rem auto;
   }
-  h3 {
-    font-size: 1.8rem;
-  }
-  form {
+  .profile__info {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    .profile__inputs {
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    @include respond-to(small) {
+      gap: 0.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+      color: grey;
+      @include respond-to(small) {
+        font-size: 1.15rem;
+      }
+    }
+    span {
+      font-weight: 700;
+      font-size: 1.5rem;
+      @include respond-to(small) {
+        font-size: 1.1rem;
+      }
+    }
+    .selected {
+      color: black;
+    }
+  }
+  .profile__box {
+    .tickets__box {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      row-gap: 1.2rem;
-      column-gap: 2rem;
-      @include respond-to(large) {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
-      }
-      @include respond-to(medium) {
-        grid-template-columns: repeat(1, 1fr);
-      }
-      .form__input {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2rem;
+      column-gap: 1.2rem;
+      margin-top: 1rem;
+      @include respond-to(xxlarge) {
         display: flex;
         flex-direction: column;
-        gap: 0.6rem;
-        input {
-          padding: 0.7rem;
-          border-radius: 10px;
-          font-size: 1.1rem;
+        gap: 1.5rem;
+      }
+      @include respond-to(medium) {
+        gap: 1rem;
+        margin-top: 0;
+      }
+      .ticket {
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        gap: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        @include respond-to(small) {
+          gap: 0.6rem;
         }
-        label {
-          font-size: 1.1rem;
+        img {
+          width: 8rem;
+          height: 100%;
+          border-radius: 20px;
+          @include respond-to(xxlarge) {
+            width: 10rem;
+          }
+          @include respond-to(medium) {
+            width: 7rem;
+          }
+          @include respond-to(small) {
+            width: 5rem;
+          }
+        }
+        .text__box {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          @include respond-to(medium) {
+            font-size: 0.8rem;
+          }
+          p {
+            font-size: 1.2rem;
+            font-weight: 700;
+            @include respond-to(medium) {
+              font-size: 1rem;
+            }
+          }
         }
       }
     }
-    button {
-      width: 23rem;
-      padding: 1rem;
-      border: none;
-      background-color: $main-color;
-      font-size: 1.2rem;
-      font-weight: 700;
-      border-radius: 10px;
-      margin-top: 0.5rem;
-      cursor: pointer;
-      @include respond-to(small) {
-        width: 100%;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .profile__inputs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1.2rem;
+        column-gap: 2rem;
+        @include respond-to(xlarge) {
+          column-gap: 1rem;
+        }
+        @include respond-to(large) {
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 1rem;
+          //   column-gap: 1rem;
+        }
+        @include respond-to(medium) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .form__input {
+          display: flex;
+          flex-direction: column;
+          gap: 0.6rem;
+          input {
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+          }
+          label {
+            font-size: 1.1rem;
+          }
+        }
+      }
+      button {
+        width: 23rem;
+        padding: 1rem;
+        border: none;
+        background-color: $main-color;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        @include respond-to(small) {
+          width: 100%;
+        }
       }
     }
   }
