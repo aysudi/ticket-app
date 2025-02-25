@@ -288,6 +288,7 @@
   ],
   "users": [
     {
+      "id": "1",
       "role": "admin",
       "username": "admin_tech",
       "fullName": "Admin Tech",
@@ -307,6 +308,7 @@
       "totalSpentMoney": 0
     },
     {
+      "id": "2",
       "role": "client",
       "username": "johnny_events",
       "fullName": "Johnny Events",
@@ -326,6 +328,7 @@
       "totalSpentMoney": 80
     },
     {
+      "id": "3",
       "role": "client",
       "username": "mike_attendee",
       "fullName": "Mike Attendee",
@@ -345,6 +348,7 @@
       "totalSpentMoney": 50
     },
     {
+      "id": 4,
       "role": "client",
       "username": "jenny_tech",
       "fullName": "Jenny Tech",
@@ -364,6 +368,7 @@
       "totalSpentMoney": 110
     },
     {
+      "id": 5,
       "role": "client",
       "username": "susan_smith",
       "fullName": "Susan Smith",
@@ -383,6 +388,7 @@
       "totalSpentMoney": 250
     },
     {
+      "id": 6,
       "role": "client",
       "username": "alex_brown",
       "fullName": "Alex Brown",
@@ -402,6 +408,7 @@
       "totalSpentMoney": 60
     },
     {
+      "id": 7,
       "role": "client",
       "username": "emily_jo",
       "fullName": "Emily Jo",
@@ -421,6 +428,7 @@
       "totalSpentMoney": 30
     },
     {
+      "id": 8,
       "role": "client",
       "username": "jack_miller",
       "fullName": "Jack Miller",
@@ -440,6 +448,7 @@
       "totalSpentMoney": 20
     },
     {
+      "id": 9,
       "role": "client",
       "username": "olivia_white",
       "fullName": "Olivia White",
@@ -459,6 +468,7 @@
       "totalSpentMoney": 150
     },
     {
+      "id": 10,
       "role": "client",
       "username": "lucas_king",
       "fullName": "Lucas King",
@@ -478,6 +488,7 @@
       "totalSpentMoney": 90
     },
     {
+      "id": 11,
       "role": "client",
       "username": "sophia_lee",
       "fullName": "Sophia Lee",
@@ -497,6 +508,7 @@
       "totalSpentMoney": 70
     },
     {
+      "id": 12,
       "role": "client",
       "username": "benjamin_gray",
       "fullName": "Benjamin Gray",
@@ -516,6 +528,7 @@
       "totalSpentMoney": 10
     },
     {
+      "id": 13,
       "role": "client",
       "username": "mia_peters",
       "fullName": "Mia Peters",
@@ -535,6 +548,7 @@
       "totalSpentMoney": 40
     },
     {
+      "id": 14,
       "role": "client",
       "username": "nathan_fox",
       "fullName": "Nathan Fox",
@@ -554,6 +568,7 @@
       "totalSpentMoney": 60
     },
     {
+      "id": 15,
       "role": "client",
       "username": "ella_baker",
       "fullName": "Ella Baker",

@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (validUser) {
       const userApp = new LocalItems("userID");
-      const newUser = { id: validUser.id };
+      const newUser = { id: validUser.id, role: validUser.role };
       userApp.add(newUser, "userID");
       Swal.fire({
         title: "Successfully logged!",
@@ -29,7 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
         draggable: true,
       });
       setTimeout(() => {
-        window.location.href = "./user.html";
+        if (validUser.role == "admin") {
+          window.location.href = "./admin.html";
+        } else {
+          window.location.href = "./user.html";
+        }
       }, 2000);
     } else {
       loginInputs.email.value = "";
