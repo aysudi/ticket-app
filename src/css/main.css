@@ -1720,4 +1720,24 @@ footer .footer__list ul li a:hover {
   #admin form button {
     width: 100%;
   }
+}
+
+#admin__users {
+  width: 1300px;
+  margin: 5rem auto;
+}
+@media (max-width: 1468px) {
+  #admin__users {
+    width: 1100px;
+  }
+}
+@media (max-width: 1199px) {
+  #admin__users {
+    width: 910px;
+  }
+}
+@media (max-width: 1199px) {
+  #admin__users {
+    width: 90%;
+  }
 }/*# sourceMappingURL=main.css.map */
