@@ -295,7 +295,7 @@
       "email": "admin_tech@example.com",
       "password": "Hashed_password_1",
       "balance": 500,
-      "profilePictureURL": "https://example.com/images/admin-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 3
@@ -315,7 +315,7 @@
       "email": "johnny@example.com",
       "password": "Hashed_password_2",
       "balance": 150,
-      "profilePictureURL": "https://example.com/images/johnny-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 5
@@ -335,7 +335,7 @@
       "email": "mike@example.com",
       "password": "Hashed_password_3",
       "balance": 75,
-      "profilePictureURL": "https://example.com/images/mike-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 2
@@ -355,7 +355,7 @@
       "email": "jenny@example.com",
       "password": "Hashed_password_4",
       "balance": 120,
-      "profilePictureURL": "https://example.com/images/jenny-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 8
@@ -375,7 +375,7 @@
       "email": "susan@example.com",
       "password": "Hashed_password_5",
       "balance": 200,
-      "profilePictureURL": "https://example.com/images/susan-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 1
@@ -395,7 +395,7 @@
       "email": "alex@example.com",
       "password": "Hashed_password_6",
       "balance": 100,
-      "profilePictureURL": "https://example.com/images/alex-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 10
@@ -415,7 +415,7 @@
       "email": "emily@example.com",
       "password": "Hashed_password_7",
       "balance": 80,
-      "profilePictureURL": "https://example.com/images/emily-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 4
@@ -435,7 +435,7 @@
       "email": "jack@example.com",
       "password": "Hashed_password_8",
       "balance": 50,
-      "profilePictureURL": "https://example.com/images/jack-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 3
@@ -455,7 +455,7 @@
       "email": "olivia@example.com",
       "password": "Hashed_password_9",
       "balance": 300,
-      "profilePictureURL": "https://example.com/images/olivia-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 2
@@ -475,7 +475,7 @@
       "email": "lucas@example.com",
       "password": "Hashed_password_10",
       "balance": 220,
-      "profilePictureURL": "https://example.com/images/lucas-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 1
@@ -495,7 +495,7 @@
       "email": "sophia@example.com",
       "password": "Hashed_password_11",
       "balance": 180,
-      "profilePictureURL": "https://example.com/images/sophia-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 5
@@ -515,7 +515,7 @@
       "email": "benjamin@example.com",
       "password": "Hashed_password_12",
       "balance": 60,
-      "profilePictureURL": "https://example.com/images/benjamin-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 8
@@ -535,7 +535,7 @@
       "email": "mia@example.com",
       "password": "Hashed_password_13",
       "balance": 90,
-      "profilePictureURL": "https://example.com/images/mia-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 2
@@ -555,7 +555,7 @@
       "email": "nathan@example.com",
       "password": "Hashed_password_14",
       "balance": 110,
-      "profilePictureURL": "https://example.com/images/nathan-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 3
@@ -575,7 +575,7 @@
       "email": "ella@example.com",
       "password": "Hashed_password_15",
       "balance": 130,
-      "profilePictureURL": "https://example.com/images/ella-profile.jpg",
+      "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
       "favorites": [
         {
           "id": 6

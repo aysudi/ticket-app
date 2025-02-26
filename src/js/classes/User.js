@@ -1,8 +1,8 @@
 import moment from "moment";
 
 export class User {
-  constructor(fullName, username, email, password, balance) {
-    this.role = "client";
+  constructor(fullName, username, email, password, balance, role = "client") {
+    this.role = role;
     this.username = username;
     this.fullName = fullName;
     this.email = email;
