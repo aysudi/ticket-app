@@ -8,8 +8,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   const apiResponse = await controller.getAll(endpoints.users);
   renderUsers(apiResponse.data);
 
+  const userInputs = {
+    fullName: document.querySelector("#full-name"),
+    username: document.querySelector("#username"),
+    email: document.querySelector("#email"),
+    balance: document.querySelector("#balance"),
+    role: document.querySelector("#role"),
+    password: document.querySelector("#password"),
+  };
+
   const deleteButtons = document.querySelectorAll(".delete");
   const editButtons = document.querySelectorAll(".edit");
+  const addBtn = document.querySelector(".add__user");
   const modal = document.querySelector(".modal");
 
   deleteButtons.forEach((deleteBtn) => {
@@ -44,16 +54,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       modal.style.display = "flex";
 
-      const userInputs = {
-        fullName: document.querySelector("#full-name"),
-        username: document.querySelector("#username"),
-        email: document.querySelector("#email"),
-        balance: document.querySelector("#balance"),
-        role: document.querySelector("#role"),
-      };
-      const updateBtn = document.querySelector(".update-btn");
-      const cancelBtn = document.querySelector(".cancel-btn");
-
       const validUser = apiResponse.data.find((x) => x.id == userId);
 
       userInputs.fullName.value = validUser.fullName;
@@ -62,12 +62,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       userInputs.balance.value = validUser.balance;
       userInputs.role.value = validUser.role;
 
+      const updateBtn = document.querySelector(".update-btn");
+
       updateBtn.addEventListener("click", async () => {
         const updatedUser = new User(
           userInputs.fullName.value,
           userInputs.username.value,
           userInputs.email.value,
-          validUser.password,
+          userInputs.password.value,
           userInputs.balance.value,
           userInputs.role.value
         );
@@ -83,12 +85,42 @@ document.addEventListener("DOMContentLoaded", async () => {
         window.location.reload();
 
         modal.style.display = "none";
-        overlay.classList.add("hidden");
+      });
+    });
+  });
+
+  const cancelBtn = document.querySelector(".cancel-btn");
+
+  cancelBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  addBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+
+    const updateBtn = document.querySelector(".update-btn");
+
+    updateBtn.addEventListener("click", async () => {
+      const newUser = new User(
+        userInputs.fullName.value,
+        userInputs.username.value,
+        userInputs.email.value,
+        userInputs.password.value,
+        userInputs.balance.value,
+        userInputs.role.value
+      );
+
+      await controller.post(endpoints.users, newUser);
+
+      await Swal.fire({
+        title: "Profile updated!",
+        icon: "success",
+        draggable: true,
       });
 
-      cancelBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-      });
+      window.location.reload();
+
+      modal.style.display = "none";
     });
   });
 });
