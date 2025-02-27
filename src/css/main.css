@@ -1823,4 +1823,37 @@ footer .footer__list ul li a:hover {
 }
 #admin__users .modal .edit__buttons .cancel-btn:hover {
   filter: brightness(90%);
+}
+
+#admin__events {
+  width: 80%;
+  margin: 4rem auto;
+}
+#admin__events thead .name {
+  width: 30rem;
+}
+#admin__events tbody .name-box {
+  width: 28.5rem;
+}
+#admin__events tbody .img-box {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#admin__events tbody .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#admin__events tbody .icons-box i {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+#admin__events tbody .icons-box .edit {
+  color: #fedd03;
+}
+#admin__events tbody .icons-box .delete {
+  color: red;
 }/*# sourceMappingURL=main.css.map */
