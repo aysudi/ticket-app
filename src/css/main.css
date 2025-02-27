@@ -1353,8 +1353,8 @@ footer .footer__list ul li a:hover {
   padding: 1rem 1.2rem;
   color: white;
   font-size: 1.2rem;
-  background-color: #fe8787;
   border-radius: 50%;
+  background-color: #fe8787;
   cursor: pointer;
 }
 @media (max-width: 1199px) {
@@ -1363,11 +1363,17 @@ footer .footer__list ul li a:hover {
     padding: 0.9rem 1rem;
   }
 }
-#basket .basket .tickets h4 {
+#basket .basket .tickets .tickets__cards .card .price__box .delete:hover {
+  filter: brightness(90%);
+}
+#basket .basket .tickets .tickets__cards .card .admin__price-box {
+  gap: 2rem;
+}
+#basket .basket .tickets .tickets__cards h4 {
   font-size: 1.3rem;
   margin-top: 1rem;
 }
-#basket .basket .users {
+#basket .basket .tickets .users {
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
@@ -1375,7 +1381,7 @@ footer .footer__list ul li a:hover {
   border-left: 1px solid grey;
 }
 @media (max-width: 768px) {
-  #basket .basket .users {
+  #basket .basket .tickets .users {
     justify-content: center;
     align-items: center;
     padding: 1.4rem;
@@ -1385,16 +1391,16 @@ footer .footer__list ul li a:hover {
     margin: 2rem auto 0;
   }
 }
-#basket .basket .users h4 {
+#basket .basket .tickets .users h4 {
   font-size: 1.4rem;
   color: rgb(79, 79, 79);
 }
-#basket .basket .users form {
+#basket .basket .tickets .users form {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
-#basket .basket .users form input {
+#basket .basket .tickets .users form input {
   background-color: transparent;
   font-size: 1.1rem;
   border-radius: 10px;
@@ -1403,16 +1409,16 @@ footer .footer__list ul li a:hover {
   width: 15rem;
 }
 @media (max-width: 768px) {
-  #basket .basket .users form input {
+  #basket .basket .tickets .users form input {
     width: 22rem;
   }
 }
 @media (max-width: 480px) {
-  #basket .basket .users form input {
+  #basket .basket .tickets .users form input {
     width: 100%;
   }
 }
-#basket .basket .users button {
+#basket .basket .tickets .users button {
   width: 100%;
   background-color: #fedd03;
   border: none;
@@ -1423,7 +1429,7 @@ footer .footer__list ul li a:hover {
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  #basket .basket .users button {
+  #basket .basket .tickets .users button {
     width: 9rem;
   }
 }
@@ -1745,6 +1751,24 @@ footer .footer__list ul li a:hover {
 #admin__users tbody .edit {
   cursor: pointer;
 }
+#admin__users .add__btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 3rem auto;
+}
+#admin__users .add__btn button {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  width: 10rem;
+  border: 1px solid #fedd03;
+  border-radius: 10px;
+  transition: 0.2s linear;
+}
+#admin__users .add__btn button:hover {
+  background-color: #fedd03;
+  color: white;
+}
 #admin__users .modal {
   display: none;
   flex-direction: column;
@@ -1798,5 +1822,5 @@ footer .footer__list ul li a:hover {
   background-color: rgb(255, 96, 96);
 }
 #admin__users .modal .edit__buttons .cancel-btn:hover {
-  background-color: #95a1ad;
+  filter: brightness(90%);
 }/*# sourceMappingURL=main.css.map */

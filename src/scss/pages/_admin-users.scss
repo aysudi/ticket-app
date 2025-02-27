@@ -8,6 +8,25 @@
     }
   }
 
+  .add__btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 3rem auto;
+    button {
+      font-size: 1.2rem;
+      padding: 0.8rem;
+      width: 10rem;
+      border: 1px solid $main-color;
+      border-radius: 10px;
+      transition: 0.2s linear;
+      &:hover {
+        background-color: $main-color;
+        color: white;
+      }
+    }
+  }
+
   .modal {
     display: none;
     flex-direction: column;
@@ -60,7 +79,7 @@
         background-color: rgb(255, 96, 96);
       }
       .cancel-btn:hover {
-        background-color: #95a1ad;
+        filter: brightness(90%);
       }
     }
   }
