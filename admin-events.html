@@ -15,6 +15,7 @@
       type="image/x-icon"
       href="./src/assets/images/ticket.png"
     />
+    <link href="tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <title>Ticket App</title>
   </head>
@@ -44,7 +45,72 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section id="admin__events">
+        <div class="shadow-lg rounded-lg overflow-hidden mx-4 md:mx-10">
+          <table class="w-full table-fixed">
+            <thead>
+              <tr class="bg-gray-100">
+                <th
+                  class="name w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase"
+                >
+                  Name
+                </th>
+                <th
+                  class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase"
+                >
+                  dateTime
+                </th>
+                <th
+                  class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase"
+                >
+                  Duration
+                </th>
+                <th
+                  class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase"
+                >
+                  Price
+                </th>
+                <th
+                  class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase"
+                >
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white"></tbody>
+          </table>
+        </div>
+        <div class="add__btn">
+          <button class="add__user">Add User</button>
+        </div>
+        <div class="modal">
+          <h3>Update Profile</h3>
+          <div class="user__inputs">
+            <input
+              id="full-name"
+              type="text"
+              placeholder="Full Name"
+              required
+            />
+            <input id="username" type="text" placeholder="Username" required />
+            <input id="role" type="text" placeholder="Role" required />
+            <input id="balance" type="number" placeholder="Balance" required />
+            <input id="email" type="email" placeholder="Email" required />
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="edit__buttons">
+            <button type="button" class="update-btn btn">Update</button>
+            <button type="button" class="cancel-btn btn">Cancel</button>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="footer__logo">
         <div class="footer__img--box">
@@ -99,6 +165,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./src/js/helpers/navbar.js"></script>
     <script type="module" src="./src/js/pages/admin-events.js"></script>
   </body>
