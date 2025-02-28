@@ -13,7 +13,7 @@
       "category": "Concert",
       "price": 63,
       "ageRestriction": "All Ages",
-      "posterURL": "https://cdn.iticket.az/event/poster_square/oU67VwSInXWdxdJ2msHnBpGyOJqr9NUr1DPNq6jz.jpg",
+      "posterURL": "https://cdn.iticket.az/event/slide/R4PzG0Pl3fQcF0pd3Bvv89vOYBvctw4VzVPdQWxI.jpg",
       "duration": "3 hours",
       "detailPoster": "https://cdn.iticket.az/event/slide/R4PzG0Pl3fQcF0pd3Bvv89vOYBvctw4VzVPdQWxI.jpg",
       "soldTickets": 20000,
@@ -70,7 +70,7 @@
       "category": "Circus",
       "price": 15,
       "ageRestriction": "All Ages",
-      "posterURL": "https://cdn.iticket.az/event/poster_bg/fX7QMWR6CU3opGpO7uNHOt3VWayYhivTHmW7Z5pR.jpg",
+      "posterURL": "https://cdn.iticket.az/event/poster_bg/xgPG3mauJ5tPOO3VyQN1WhR3oteIWAWMaKlfniPo.jpg",
       "duration": "2.5 hours",
       "detailPoster": "https://cdn.iticket.az/event/slide/lVb7iSUGqJAdBFYwnEfdlVl4rBHNezOVg0ADbc4p.jpg",
       "soldTickets": 1200,
@@ -109,7 +109,7 @@
       "category": "Cultural",
       "price": "8",
       "ageRestriction": "All Ages",
-      "posterURL": "https://cdn.iticket.az/event/poster_square/3OIVeXgGCXGDD1hOhve3ok8RErmkcOWIid4o7zU7.jpg",
+      "posterURL": "https://cdn.iticket.az/event/poster_bg/8cDjzwNBU4q55OJMxwoFgkqx16O6aeO31rzLH3pS.jpg",
       "duration": "3 hours",
       "detailPoster": "https://cdn.iticket.az/event/cover/5PgMCdT9fOnXpKqduuUlsukr79maKXx59aDmHdpq.jpg",
       "soldTickets": "1500",
@@ -129,9 +129,9 @@
       "category": "Music",
       "price": "20",
       "ageRestriction": "6+",
-      "posterURL": "https://cdn.iticket.az/event/poster_square/Rkk7bCvTCPyPXAhbu5SrGL1zUjYl1YZ54f5ZzHuE.jpg",
+      "posterURL": "https://cdn.iticket.az/event/poster_bg/h2PEmKOGxdn9kxQUd3HsyesKNqc348mBzuj5Posd.jpg",
       "duration": "2.5 hours",
-      "detailPoster": "https://cdn.iticket.az/event/cover/XVYToQQ3YrHHiC7ZfPw4kmRaJ7k6tI6GKAhILOet.jpg",
+      "detailPoster": "https://cdn.iticket.az/event/facebook/hPcdN7453KjkQaEMKXHwBUC2pYvjhgbYlfX8TaAE.jpg",
       "soldTickets": "400",
       "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4110775811837!2d49.84050437660817!3d40.37758095802025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da6788709dd%3A0xc85e9b91b3ee0ea!2s98%20Shamsi%20Badalbeyli%20St%2C%20Baku!5e0!3m2!1sen!2saz!4v1740155147243!5m2!1sen!2saz",
       "vanueName": "The concert hall of Opera Studio to Baku Music Academy"
@@ -187,9 +187,9 @@
       "category": "Concert",
       "price": 40,
       "ageRestriction": "All Ages",
-      "posterURL": "https://cdn.iticket.az/event/poster_bg/E6dY3wvvSCyXJerGBoSjoVdtxuDWmLic6veFfEzu.jpg",
+      "posterURL": "https://cdn.iticket.az/event/poster_bg/XJKCAp8owFWyNuyGAPyUM4KbunMfT3fZEzdls3VB.jpg",
       "duration": "2 hours",
-      "detailPoster": "https://cdn.iticket.az/event/cover/wOLM5O6tSE27LDbq2K31o3N7NmDC2ua3MetK0Q5S.jpg",
+      "detailPoster": "https://cdn.iticket.az/event/cover/h3j1AhIo9sJDA7RJWYwWiEOB07EFJZdk3VyFwZE6.jpg",
       "soldTickets": 3000,
       "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.9167625831356!2d49.84755837660695!3d40.34419246005029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307c19888a3a81%3A0xc253fcb6c530cf3!2sBaku%20Crystal%20Hall!5e0!3m2!1sen!2saz!4v1740154693930!5m2!1sen!2saz"
     },
@@ -210,8 +210,7 @@
       "duration": "2 hours",
       "detailPoster": "https://cdn.iticket.az/event/cover/F3dNdMp094wDHnze3As8C7843xedDJnPNMwb805p.jpg",
       "soldTickets": "300",
-      "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5451625432074!2d49.844227476608005!3d40.37460855820105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307daf279cefc1%3A0x75bbf999af54772!2sRashid%20Behbudov%20State%20Song%20Theatre!5e0!3m2!1sen!2saz!4v1740155464390!5m2!1sen!2saz",
-      "vanueName": "Melody School Auditorium"
+      "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5451625432074!2d49.844227476608005!3d40.37460855820105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307daf279cefc1%3A0x75bbf999af54772!2sRashid%20Behbudov%20State%20Song%20Theatre!5e0!3m2!1sen!2saz!4v1740155464390!5m2!1sen!2saz"
     },
     {
       "id": "12",
@@ -230,8 +229,7 @@
       "duration": "3 hours",
       "detailPoster": "https://cdn.iticket.az/event/facebook/xDLg6PjQ11IgHK0t0LLvD3DllVSOLYqesiHr4H6j.jpg",
       "soldTickets": "300",
-      "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7194598619003!2d49.84712447660803!3d40.37074445843594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dad090d9181%3A0x2b88981f2bd87785!2sPark%20Bulvar%20Mall!5e0!3m2!1sen!2saz!4v1740155505845!5m2!1sen!2saz",
-      "vanueName": "Hayal Kahvesi Baku"
+      "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7194598619003!2d49.84712447660803!3d40.37074445843594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dad090d9181%3A0x2b88981f2bd87785!2sPark%20Bulvar%20Mall!5e0!3m2!1sen!2saz!4v1740155505845!5m2!1sen!2saz"
     },
     {
       "id": "13",
@@ -250,24 +248,25 @@
       "duration": "5 hours",
       "detailPoster": "https://cdn.iticket.az/event/cover/ZOLlHAYiZr2lz0rZnlyJ7deOniBjSvgwQckPAPcw.jpg",
       "soldTickets": "200",
-      "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7248679501863!2d49.84752447660794!3d40.370624558443325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d48cedf629f%3A0xd2b0761dfca5bb6c!2sHayal%20Kahvesi%20Baku!5e0!3m2!1sen!2saz!4v1740155583915!5m2!1sen!2saz",
-      "vanueName": "Sky Lounge Baku"
+      "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7248679501863!2d49.84752447660794!3d40.370624558443325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d48cedf629f%3A0xd2b0761dfca5bb6c!2sHayal%20Kahvesi%20Baku!5e0!3m2!1sen!2saz!4v1740155583915!5m2!1sen!2saz"
     },
     {
       "id": "69b1",
       "name": "Kenan Doğulu Live in Baku",
       "dateTime": "June 21, 2025",
-      "vanueName": "Baku Sports Hall",
+      "venueName": "Baku Sports Hall",
+      "venueAddress": "Baku Sports Hall, Baku, Azerbaijan",
       "venueCapacity": "2000",
       "description": "Experience an unforgettable night of music and magic as Turkish pop icon Kenan Doğulu takes the stage at Baku Sports Hall! Renowned for his infectious energy and chart-topping hits, Kenan will deliver an electrifying performance featuring fan-favorite songs from his legendary albums, including Kim Bu Ben, Ben Senin Her Şeyinim, Rüya, and Seyyah. Get ready for a dynamic show filled with mesmerizing stage effects, live instrumentation, and Kenan’s signature charisma that has captivated audiences worldwide. With a high-energy crowd, an unbeatable atmosphere, and one of Turkey’s most beloved artists performing live, this is a must-attend event for music lovers of all ages. Secure your tickets now and be part of a spectacular evening where music and emotions come together in perfect harmony!",
       "ticketsAvailable": "500",
       "category": "Concert",
       "price": "59",
       "ageRestriction": "16+",
-      "posterURL": "https://cdn.iticket.az/event/poster_square/GBou9V7M2NcZrpJesySUuD0qEmxNYHxwmaB50Gzy.jpg",
+      "posterURL": "https://cdn.iticket.az/event/artist_bg/sgjHtk0r3FeVjU0ayP9S86kg5vOrT1hByJqXy08m.jpg",
       "duration": "1.5 hours",
-      "detailPoster": "https://cdn.iticket.az/event/cover/dKy5ZUuGhGO6oMoOVPiXEEXQNIhUI49N36bytV1b.jpg",
-      "soldTickets": "2000"
+      "detailPoster": "https://cdn.iticket.az/event/cover/4rS60B0rcPKoAQiE6JiAlkc65Trs6nSPVF3DTFwX.jpg",
+      "soldTickets": "2000",
+      "iframeURL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7248679501863!2d49.84752447660794!3d40.370624558443325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d48cedf629f%3A0xd2b0761dfca5bb6c!2sHayal%20Kahvesi%20Baku!5e0!3m2!1sen!2saz!4v1740155583915!5m2!1sen!2saz"
     }
   ],
   "users": [
