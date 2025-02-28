@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import controller from "../services/request.js";
 import { User } from "../classes/User.js";
-import { endpoints } from "../services/api";
+import { endpoints } from "../services/api.js";
 import { validatePassword } from "../helpers/validatePassword.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -13,6 +13,26 @@ document.addEventListener("DOMContentLoaded", async () => {
     confirmPassword: document.querySelector("#confirm-password"),
   };
   const form = document.querySelector(".sign__form");
+
+  const eyeIcons = document.querySelectorAll(".password-icon");
+
+  let inputType = registerInputs.password.getAttribute("type");
+
+  eyeIcons.forEach((eyeIcon) => {
+    eyeIcon.addEventListener("click", () => {
+      if (inputType == "password") {
+        inputType = "text";
+        eyeIcon.previousElementSibling.setAttribute("type", "text");
+        eyeIcon.classList.add("fa-eye");
+        eyeIcon.classList.remove("fa-eye-slash");
+      } else {
+        inputType = "password";
+        eyeIcon.previousElementSibling.setAttribute("type", "password");
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      }
+    });
+  });
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();

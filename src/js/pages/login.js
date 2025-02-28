@@ -9,6 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
     password: document.querySelector("#password"),
   };
   const form = document.querySelector(".sign__form");
+  const eyeIcon = document.querySelector(".password-icon");
+
+  eyeIcon.addEventListener("click", () => {
+    if (loginInputs.password.getAttribute("type") == "password") {
+      loginInputs.password.setAttribute("type", "text");
+      eyeIcon.classList.add("fa-eye");
+      eyeIcon.classList.remove("fa-eye-slash");
+    } else {
+      loginInputs.password.setAttribute("type", "password");
+      eyeIcon.classList.remove("fa-eye");
+      eyeIcon.classList.add("fa-eye-slash");
+    }
+  });
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
