@@ -29,8 +29,8 @@ export function renderAdminEvents(arr) {
                 </td>
                 <td class="py-4 px-6 border-b border-gray-200">
                   <div class="icons-box flex gap-10 align-center">
-                    <i class="edit fa-solid fa-pen-to-square"></i>
-                    <i class="delete fa-solid fa-trash"></i>
+                    <i data-id=${event.id} class="edit fa-solid fa-pen-to-square"></i>
+                    <i data-id=${event.id} class="delete fa-solid fa-trash"></i>
                   </div>
                 </td>
               </tr>
