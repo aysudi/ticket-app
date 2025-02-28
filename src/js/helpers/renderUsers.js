@@ -36,9 +36,6 @@ export function renderUsers(arr) {
                 ${user.email}
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
-                <a data-id=${user.id} class="edit text-indigo-600 hover:text-indigo-900"
-                  >Edit</a
-                >
                 <a data-id=${user.id} class="delete ml-2 text-red-600 hover:text-red-900"
                   >Delete</a
                 >
@@ -47,3 +44,7 @@ export function renderUsers(arr) {
     `;
   });
 }
+
+/* <a data-id=${user.id} class="edit text-indigo-600 hover:text-indigo-900"
+>Edit</a
+> */
