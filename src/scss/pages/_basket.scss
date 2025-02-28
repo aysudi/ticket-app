@@ -150,56 +150,56 @@
           margin-top: 1rem;
         }
       }
-      .users {
+    }
+    .users {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      padding: 2rem;
+      border-left: 1px solid grey;
+      @include respond-to(medium) {
+        justify-content: center;
+        align-items: center;
+        padding: 1.4rem;
+        border-top: 1px solid grey;
+        border-left: none;
+        width: 90%;
+        margin: 2rem auto 0;
+      }
+      h4 {
+        font-size: 1.4rem;
+        color: rgb(79, 79, 79);
+      }
+      form {
         display: flex;
         flex-direction: column;
-        gap: 1.4rem;
-        padding: 2rem;
-        border-left: 1px solid grey;
-        @include respond-to(medium) {
-          justify-content: center;
-          align-items: center;
-          padding: 1.4rem;
-          border-top: 1px solid grey;
-          border-left: none;
-          width: 90%;
-          margin: 2rem auto 0;
-        }
-        h4 {
-          font-size: 1.4rem;
-          color: rgb(79, 79, 79);
-        }
-        form {
-          display: flex;
-          flex-direction: column;
-          gap: 0.8rem;
-          input {
-            background-color: transparent;
-            font-size: 1.1rem;
-            border-radius: 10px;
-            border: 1px solid grey;
-            padding: 0.7rem 1rem;
-            width: 15rem;
-            @include respond-to(medium) {
-              width: 22rem;
-            }
-            @include respond-to(small) {
-              width: 100%;
-            }
-          }
-        }
-        button {
-          width: 100%;
-          background-color: $main-color;
-          border: none;
-          border-radius: 15px;
-          font-size: 1.2rem;
-          font-weight: 700;
-          padding: 0.9rem 0;
-          cursor: pointer;
+        gap: 0.8rem;
+        input {
+          background-color: transparent;
+          font-size: 1.1rem;
+          border-radius: 10px;
+          border: 1px solid grey;
+          padding: 0.7rem 1rem;
+          width: 15rem;
           @include respond-to(medium) {
-            width: 9rem;
+            width: 22rem;
           }
+          @include respond-to(small) {
+            width: 100%;
+          }
+        }
+      }
+      button {
+        width: 100%;
+        background-color: $main-color;
+        border: none;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 0.9rem 0;
+        cursor: pointer;
+        @include respond-to(medium) {
+          width: 9rem;
         }
       }
     }

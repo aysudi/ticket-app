@@ -127,8 +127,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       basketInputs.email.value == checkValidUser.email &&
       basketInputs.password.value == checkValidUser.password
     ) {
-      for (const ticket of basketItems) {
-        if (checkValidUser.balance > totalPrice) {
+      if (checkValidUser.balance > totalPrice) {
+        const updatedTickets = JSON.parse(localStorage.getItem("basket"));
+
+        for (const ticket of updatedTickets) {
           const ticketData = {
             userId: user[0].id,
             eventId: ticket.id,
@@ -137,7 +139,18 @@ document.addEventListener("DOMContentLoaded", async () => {
             purchaseDate: new Date().toISOString(),
             ticketCode: generateRandomCode(),
           };
+
+          const validEvent = tickets.filter((x) => x.id == ticket.id);
+          const decreasedAvailableTickets =
+            validEvent[0].ticketsAvailable - ticket.quantity;
+
           await controller.post(endpoints.tickets, ticketData);
+          await controller.updateOne(
+            endpoints.events,
+            { ticketsAvailable: decreasedAvailableTickets },
+            ticket.id
+          );
+
           const ticketsCards = document.querySelector(".tickets__cards");
           ticketsCards.innerHTML = "";
           basketInputs.fullName.value = "";
@@ -150,30 +163,31 @@ document.addEventListener("DOMContentLoaded", async () => {
             icon: "success",
             draggable: true,
           });
-        } else {
-          Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "You don't have enough balance!",
-          });
+
+          let spentMoney = Number(checkValidUser.totalSpentMoney);
+          spentMoney += totalPrice;
+
+          let balance = Number(checkValidUser.balance);
+          balance -= totalPrice;
+
+          await controller.updateOne(
+            endpoints.users,
+            {
+              balance: balance,
+              totalSpentMoney: spentMoney,
+            },
+            user[0].id
+          );
+
+          subTotal.textContent = 0;
         }
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "You don't have enough balance!",
+        });
       }
-      let spentMoney = Number(checkValidUser.totalSpentMoney);
-      spentMoney += totalPrice;
-
-      let balance = Number(checkValidUser.balance);
-      balance -= totalPrice;
-
-      await controller.updateOne(
-        endpoints.users,
-        {
-          balance: balance,
-          totalSpentMoney: spentMoney,
-        },
-        user[0].id
-      );
-
-      subTotal.textContent = 0;
     } else {
       Swal.fire({
         icon: "error",
