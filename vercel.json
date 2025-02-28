@@ -1,0 +1,23 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "rewrites": [
+    { "source": "/index", "destination": "/index.html" },
+    { "source": "/user", "destination": "/user.html" },
+    { "source": "/login", "destination": "/signIn.html" },
+    { "source": "/events", "destination": "/events.html" },
+    { "source": "/register", "destination": "/signUp.html" },
+    { "source": "/details", "destination": "/details.html" },
+    { "source": "/basket", "destination": "/basket.html" },
+    { "source": "/favorites", "destination": "/favorites.html" },
+    { "source": "/admin", "destination": "/admin.html" },
+    { "source": "/admin-events", "destination": "/admin-events.html" },
+    { "source": "/admin-tickets", "destination": "/admin-tickets.html" },
+    { "source": "/admin-users", "destination": "/admin-users.html" }
+  ]
+}
