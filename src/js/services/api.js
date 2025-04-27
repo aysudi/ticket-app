@@ -1,4 +1,4 @@
-export const API_URL = "http://localhost:3000";
+export const API_URL = "https://ticket-app-json-server.vercel.app";
 
 export const endpoints = {
   events: "/events",
