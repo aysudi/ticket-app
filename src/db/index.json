@@ -9,7 +9,7 @@
       "venueCapacity": 25000,
       "organizer": "Live Nation",
       "description": "Experience the magic of OneRepublic live in concert as they bring their electrifying performance to Baku Crystal Hall. Known for their chart-topping hits such as 'Counting Stars,' 'Apologize,' and 'Secrets,' this American pop-rock band has captivated audiences worldwide. With stunning visuals, powerful vocals, and anthemic melodies, this concert promises an unforgettable night filled with energy, passion, and musical brilliance. Whether you're a long-time fan or discovering their music for the first time, this is a night you won't want to miss.",
-      "ticketsAvailable": 4999,
+      "ticketsAvailable": 4998,
       "category": "Concert",
       "price": 63,
       "ageRestriction": "All Ages",
@@ -47,7 +47,7 @@
       "venueCapacity": 3500,
       "organizer": "Music Events LLC",
       "description": "Celebrate International Women's Day with an exclusive concert featuring Azerbaijan's legendary singer, Brilliant Dadashova. With a career spanning decades, her timeless hits and soulful voice have touched millions. This special evening will showcase a blend of her classic ballads and energetic pop songs, accompanied by a stunning live orchestra. It's an opportunity to honor women through the universal language of music and enjoy an elegant, emotionally charged performance.",
-      "ticketsAvailable": 499,
+      "ticketsAvailable": 498,
       "category": "Concert",
       "price": 50,
       "ageRestriction": "All Ages",
@@ -202,7 +202,7 @@
       "venueCapacity": "500",
       "organizer": "Melody School Events",
       "description": "An evening dedicated to showcasing the incredible talents of Melody School students, featuring captivating music performances, heartfelt recitals, and special guest appearances. This event offers a unique opportunity to witness young and aspiring musicians as they present their hard work and dedication on stage. Whether you're a family member, a music enthusiast, or simply looking for an inspiring evening, this showcase will be a delightful experience filled with passion, creativity, and outstanding performances. Celebrate the future of music with us!",
-      "ticketsAvailable": "199",
+      "ticketsAvailable": 197,
       "category": "Music & Arts",
       "price": "15",
       "ageRestriction": "All Ages",
@@ -298,14 +298,10 @@
       "fullName": "Johnny Events",
       "email": "johnny@example.com",
       "password": "Hashed_password_2",
-      "balance": 87,
+      "balance": 357,
       "profilePictureURL": "https://cdn-icons-png.freepik.com/512/13126/13126995.png",
-      "favorites": [
-        {
-          "id": "1"
-        }
-      ],
-      "accountCreationDate": "05/15/2023",
+      "favorites": [],
+      "accountCreationDate": "04/27/2025",
       "totalSpentMoney": 143
     },
     {
@@ -873,6 +869,33 @@
       "price": 63,
       "purchaseDate": "2025-03-29T06:46:16.406Z",
       "ticketCode": "TK-004-01N05"
+    },
+    {
+      "id": "4bed",
+      "userId": "2",
+      "eventId": "1",
+      "quantity": 1,
+      "price": 63,
+      "purchaseDate": "2025-04-27T15:25:13.714Z",
+      "ticketCode": "TK-491-5HX41"
+    },
+    {
+      "id": "6349",
+      "userId": "2",
+      "eventId": "3",
+      "quantity": 1,
+      "price": 50,
+      "purchaseDate": "2025-04-27T15:25:13.746Z",
+      "ticketCode": "TK-700-PX9E1"
+    },
+    {
+      "id": "c468",
+      "userId": "2",
+      "eventId": "11",
+      "quantity": 2,
+      "price": "15",
+      "purchaseDate": "2025-04-27T15:25:13.758Z",
+      "ticketCode": "TK-045-YN0SN"
     }
   ]
 }

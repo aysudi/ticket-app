@@ -81,112 +81,137 @@
       font-size: 1.5rem;
     }
   }
-  .swiper {
+  .slider-container {
     width: 100%;
     height: 46vh;
+    position: relative;
+    overflow: hidden;
     @include respond-to(medium) {
       height: 16rem;
     }
     @include respond-to(small) {
       height: 12rem;
     }
-    .swiper-slide {
+
+    .slider-track {
       display: flex;
-      flex-direction: column;
-      background: white;
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      cursor: pointer;
-      .text-box {
+      gap: 1.5rem;
+      transition: transform 0.3s ease;
+      will-change: transform;
+      .swiper-slide {
         display: flex;
+        flex: 0 0 calc(100% / #{$slides-per-view-desktop});
         flex-direction: column;
-        position: absolute;
-        bottom: 1px;
-        left: 10px;
-        transform: translateY(-15px);
-        visibility: hidden;
-        h4 {
-          font-weight: 700;
-          font-size: 18px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-        .event-info {
-          display: flex;
-          align-items: center;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          span {
-            font-size: 14px;
-            color: rgb(83, 81, 81);
-          }
-          .dot {
-            font-size: 16px;
-            margin: 0 4px 1px 4px;
-          }
-        }
-      }
-      &:hover {
-        .text-box {
-          transform: translateY(0px);
-          visibility: visible;
-          transition: 0.2s linear;
-        }
-        .img-box span {
-          transform: translateY(-4rem);
-        }
-      }
-      .img-box {
-        width: 100%;
-        height: 100%;
+        background: white;
         position: relative;
-        z-index: 10;
-        img {
+        border-radius: 20px;
+        overflow: hidden;
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        cursor: pointer;
+        .text-box {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          bottom: 1px;
+          left: 10px;
+          transform: translateY(-15px);
+          visibility: hidden;
+          h4 {
+            font-weight: 700;
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .event-info {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            span {
+              font-size: 14px;
+              color: rgb(83, 81, 81);
+            }
+            .dot {
+              font-size: 16px;
+              margin: 0 4px 1px 4px;
+            }
+          }
+        }
+        &:hover {
+          .text-box {
+            transform: translateY(0px);
+            visibility: visible;
+            transition: 0.2s linear;
+          }
+          .img-box span {
+            transform: translateY(-4rem);
+          }
+        }
+        .img-box {
           width: 100%;
           height: 100%;
-          object-fit: cover;
-          border-radius: 20px;
-          overflow: hidden;
-          transition: 0.2s linear;
+          position: relative;
           z-index: 10;
-          &:hover {
-            transform: translateY(-3.4rem);
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: 0.2s linear;
+            z-index: 10;
+            &:hover {
+              transform: translateY(-3.4rem);
+            }
           }
-        }
-        span {
-          position: absolute;
-          bottom: 1rem;
-          right: 1rem;
-          padding: 0.5rem 1.5rem;
-          background-color: $main-color;
-          font-size: 1.2rem;
-          border-radius: 1.5rem;
-          transition: 0.2s;
-          @include respond-to(medium) {
-            font-size: 1.1rem;
-            padding: 0.4rem 1.4rem;
-          }
-          @include respond-to(small) {
-            font-size: 0.8rem;
-            padding: 0.3rem 1rem;
+          span {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1.5rem;
+            background-color: $main-color;
+            font-size: 1.2rem;
+            border-radius: 1.5rem;
+            transition: 0.2s;
+            @include respond-to(medium) {
+              font-size: 1.1rem;
+              padding: 0.4rem 1.4rem;
+            }
+            @include respond-to(small) {
+              font-size: 0.8rem;
+              padding: 0.3rem 1rem;
+            }
           }
         }
       }
     }
-    .btn {
+
+    .nav {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      z-index: 10;
       color: black;
       background-color: $main-color;
       border: none;
-      padding: 2.5rem;
+      padding: 1rem 2.2rem;
+      font-size: 2.9rem;
       cursor: pointer;
       transition: background 0.3s;
       border-radius: 50%;
+
+      &.prev {
+        left: 10px;
+      }
+
+      &.next {
+        right: 10px;
+      }
+
       @include respond-to(medium) {
         color: $main-color;
         background-color: transparent;

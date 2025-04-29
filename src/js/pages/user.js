@@ -11,7 +11,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   const apiResponse = await controller.getAll(endpoints.users);
   const userData = apiResponse.data.find((x) => x.id == checkValidUser[0].id);
 
+  const ticketsAPI = await controller.getAll(endpoints.tickets);
+  const eventsAPI = await controller.getAll(endpoints.events);
+
+  const validTickets = ticketsAPI.data.filter(
+    (x) => x.userId == checkValidUser[0].id
+  );
+
+  const validEvents = eventsAPI.data.filter((event) =>
+    validTickets.some((ticket) => ticket.eventId == event.id)
+  );
+
   renderUserProfile(userData);
+  renderTickets(validEvents);
 
   const userInputs = {
     fullName: document.querySelector("#full-name"),
@@ -21,38 +33,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     currentPassword: document.querySelector("#current-password"),
     newPassword: document.querySelector("#new-password"),
   };
-
-  const user = document.querySelector(".user");
-  const tickets = document.querySelector(".tickets");
-  tickets.addEventListener("click", async () => {
-    tickets.classList.add("selected");
-    user.classList.remove("selected");
-
-    const ticketsAPI = await controller.getAll(endpoints.tickets);
-    const eventsAPI = await controller.getAll(endpoints.events);
-
-    const validTickets = ticketsAPI.data.filter(
-      (x) => x.userId == checkValidUser[0].id
-    );
-    console.log(validTickets);
-
-    const validEvents = eventsAPI.data.filter((event) =>
-      validTickets.some((ticket) => ticket.eventId == event.id)
-    );
-
-    const profileBox = document.querySelector(".user__box");
-    profileBox.innerHTML = "";
-    renderTickets(validEvents);
-  });
-
-  user.addEventListener("click", () => {
-    user.classList.add("selected");
-    tickets.classList.remove("selected");
-    const ticketsBox = document.querySelector(".tickets__box");
-    ticketsBox.innerHTML = "";
-
-    renderUserProfile(userData);
-  });
 
   const form = document.querySelector("form");
   form.addEventListener("submit", async (e) => {

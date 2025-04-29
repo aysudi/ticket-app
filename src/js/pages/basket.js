@@ -44,8 +44,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       this.parentElement.nextElementSibling.textContent = `${
         validPrice.price * validItem.quantity
       }$`;
-      totalPrice += validPrice.price;
-      subTotal.textContent = totalPrice;
+
+      totalPrice = totalPrice + Number(validPrice.price); // Force number addition
+      subTotal.textContent = totalPrice.toFixed(2); // Always format nicely
     });
 
     increaseBtn.parentElement.nextElementSibling.textContent = `${
@@ -68,8 +69,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       this.parentElement.nextElementSibling.textContent = `${
         validPrice.price * validItem.quantity
       }$`;
-      totalPrice -= validPrice.price;
-      subTotal.textContent = totalPrice;
+
+      totalPrice = totalPrice - Number(validPrice.price);
+      subTotal.textContent = totalPrice.toFixed(2);
     });
 
     decreaseBtn.parentElement.nextElementSibling.textContent = `${
@@ -111,10 +113,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  prices.forEach(
-    (price) => (totalPrice += Number(price.textContent.split("$")[0]))
-  );
-  subTotal.textContent = totalPrice;
+  prices.forEach((price) => {
+    totalPrice += Number(price.textContent.split("$")[0]);
+  });
+  subTotal.textContent = totalPrice.toFixed(2);
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
