@@ -1,5 +1,5 @@
 export function renderEventsList(arr) {
-  const events = document.querySelector(".events");
+  const events = document.querySelector(".slider-track");
   events.innerHTML = "";
   arr.forEach((event) => {
     events.innerHTML += `
