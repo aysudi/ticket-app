@@ -10,6 +10,17 @@
   .details__img {
     overflow: hidden;
     position: relative;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   bottom: 0.3rem;
+    //   left: 0;
+    //   height: 7rem;
+    //   background-color: rgba(0, 0, 0, 0.332);
+    //   border-bottom-left-radius: 20px;
+    //   border-bottom-right-radius: 20px;
+    // }
     @include respond-to(medium) {
       height: 20rem;
     }
@@ -28,6 +39,18 @@
       right: 3rem;
       display: flex;
       gap: 1rem;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 4rem;
+        background-color: rgba(0, 0, 0, 0.332);
+        border-radius: 30px;
+        z-index: -1;
+      }
       i {
         font-size: 1.4rem;
         padding: 1.1rem;

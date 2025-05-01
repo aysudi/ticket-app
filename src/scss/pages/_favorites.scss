@@ -94,10 +94,10 @@
 }
 
 .events__sort {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  width: 100%;
   @include respond-to(small) {
     flex-direction: column;
     gap: 0.8rem;
@@ -105,9 +105,8 @@
   .events__search {
     position: relative;
     padding: 1rem;
-    border: 1px solid black;
-    border-radius: 30px;
-    width: 32rem;
+    border: 2px solid black;
+    border-radius: 20px;
     @include respond-to(small) {
       width: 100%;
       padding: 0.6rem;
@@ -130,8 +129,8 @@
   }
   select {
     padding: 1rem;
-    border-radius: 30px;
-    width: 30rem;
+    border: 2px solid black;
+    border-radius: 20px;
     font-size: 1.1rem;
     @include respond-to(small) {
       width: 100%;

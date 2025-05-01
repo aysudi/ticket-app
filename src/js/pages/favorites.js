@@ -12,6 +12,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderFavorites(favoritesList);
   searchItems(favoritesList, renderFavorites);
 
+  const favCard = document.querySelectorAll(".card");
+
+  favCard.forEach((fav) => {
+    console.log(fav);
+    fav.addEventListener("click", () => {
+      const id = fav.getAttribute("data-id");
+      const url = new URL("http://localhost:5173/details.html");
+      url.searchParams.set("id", id);
+      window.location.href = url.toString();
+    });
+  });
+
   const sort = document.querySelector("#sort");
   sort.addEventListener("change", (e) => {
     const sortedList = sortItems(e.target.value, favoritesList);

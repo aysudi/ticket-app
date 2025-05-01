@@ -119,12 +119,10 @@ async function initCustomSlider() {
   });
 
   slides.forEach((slide) => {
-    if (!slide.classList.contains("clone")) {
-      slide.addEventListener("click", () => {
-        const eventID = slide.getAttribute("data-id");
-        window.location.href = `./details.html?id=${eventID}`;
-      });
-    }
+    slide.addEventListener("click", () => {
+      const eventID = slide.getAttribute("data-id");
+      window.location.href = `./details.html?id=${eventID}`;
+    });
   });
 
   updateSlider(false);

@@ -3,7 +3,7 @@ export function renderFavorites(arr) {
   favoritesCards.innerHTML = "";
   arr.forEach((event) => {
     favoritesCards.innerHTML += `
-        <div class="card">
+        <div class="card" data-id=${event.id}>
             <div class="favorites__img">
               <img
                 src="${event.posterURL}"

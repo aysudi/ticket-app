@@ -292,7 +292,7 @@ header .header__right .header__profile:hover .header__dropdown {
 }
 #popular-events .slider-container {
   width: 100%;
-  height: 46vh;
+  height: 48vh;
   position: relative;
   overflow: hidden;
 }
@@ -907,6 +907,18 @@ footer .footer__list ul li a:hover {
   right: 3rem;
   display: flex;
   gap: 1rem;
+  z-index: 1;
+}
+#details .details__img .details__icons::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.332);
+  border-radius: 30px;
+  z-index: -1;
 }
 #details .details__img .details__icons i {
   font-size: 1.4rem;
@@ -1142,10 +1154,10 @@ footer .footer__list ul li a:hover {
 }
 
 .events__sort {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  width: 100%;
 }
 @media (max-width: 480px) {
   .events__sort {
@@ -1156,9 +1168,8 @@ footer .footer__list ul li a:hover {
 .events__sort .events__search {
   position: relative;
   padding: 1rem;
-  border: 1px solid black;
-  border-radius: 30px;
-  width: 32rem;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 @media (max-width: 480px) {
   .events__sort .events__search {
@@ -1185,8 +1196,8 @@ footer .footer__list ul li a:hover {
 }
 .events__sort select {
   padding: 1rem;
-  border-radius: 30px;
-  width: 30rem;
+  border: 2px solid black;
+  border-radius: 20px;
   font-size: 1.1rem;
 }
 @media (max-width: 480px) {
