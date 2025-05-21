@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   };
 
   const deleteButtons = document.querySelectorAll(".delete");
-  //   const editButtons = document.querySelectorAll(".edit");
   const addBtn = document.querySelector(".add__user");
   const modal = document.querySelector(".modal");
 
