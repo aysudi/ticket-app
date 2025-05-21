@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         validPrice.price * validItem.quantity
       }$`;
 
-      totalPrice = totalPrice + Number(validPrice.price); // Force number addition
-      subTotal.textContent = totalPrice.toFixed(2); // Always format nicely
+      totalPrice = totalPrice + Number(validPrice.price);
+      subTotal.textContent = totalPrice.toFixed(2);
     });
 
     increaseBtn.parentElement.nextElementSibling.textContent = `${
